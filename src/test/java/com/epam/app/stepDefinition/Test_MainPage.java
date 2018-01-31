@@ -1,5 +1,5 @@
 
-package com.epam.app;
+package com.epam.app.stepDefinition;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -15,7 +15,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.clearBrowserCache;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
-public class MainPage {
+public class Test_MainPage {
 
     @Given("^browser: (.+)$")
     public static void setupClass(String browser) {
@@ -45,7 +45,7 @@ public class MainPage {
         Thread.sleep(per);
     }
 
-    @And("^set login as: (.+) and password as: (.+)$")
+    @And("^set login as: \"(.*)\" and password as: \"(.*)\"$")
     public void setLoginPassword(String login, String password) {
         $(By.name("username")).pressEnter();
         $(By.name("username")).setValue(login);
