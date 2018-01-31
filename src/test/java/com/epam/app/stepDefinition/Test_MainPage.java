@@ -6,6 +6,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,8 +68,12 @@ public class Test_MainPage {
         $(By.xpath("/html/body/table/tbody/tr[2]/td/table/tbody/tr/td[2]/div/a")).exists();
     }
 
-    @And("^chose to register from inside of error message$")
+    @And("^choose to register from inside of error message$")
     public void erroRegister() {
-        $(By.xpath("/html/body/table/tbody/tr[2]/td/table/tbody/tr/td[2]/div/a")).followLink();
+        try {
+            $(By.xpath("/html/body/table/tbody/tr[2]/td/table/tbody/tr/td[2]/div/a")).followLink();
+        } catch (NoSuchElementException e) {
+            System.out.println($(By.xpath("/html/body/table/tbody/tr[2]/td/table/tbody/tr/td[2]/div/a")).getText());
+        }
     }
 }

@@ -23,13 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d6b4635-5e93-43a9-8295-38a5395c04df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Given.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/features/UiTests/UiTests.feature" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/features/UiTests/UiTests.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/UiTests.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app.iml" afterPath="$PROJECT_DIR$/my-app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app.ipr" afterPath="$PROJECT_DIR$/my-app.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app.iws" afterPath="$PROJECT_DIR$/my-app.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/cucumberTest/TestRunner.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/cucumberTest/TestRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/UiTests.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/UiTests.feature" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -204,21 +201,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UiTests.feature" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UiTests.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/UiTests.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+            <state relative-caret-position="85">
+              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/cucumberTest/TestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="170">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -229,10 +226,12 @@
       <file leaf-file-name="Test_MainPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="115">
+              <caret line="66" column="16" lean-forward="false" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2122#2123#0" expanded="true" />
+                <element signature="e#2220#2221#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -275,9 +274,10 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Given.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/UiTests/UiTests.feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/cucumberTest/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/UiTests.feature" />
       </list>
     </option>
   </component>
@@ -430,36 +430,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stepDefinition" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="withSelenide_" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -518,31 +488,7 @@
       <recent name="com.epam.app.stepDefinition" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
-    <configuration default="false" name="Feature: UiTests" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/UiTests/UiTests.feature" />
-      <option name="GLUE" value="com.epam.app.stepDefinition" />
-      <option name="myNameFilter" value="" />
-      <option name="myGeneratedName" value="Feature: UiTests" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="my-app" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Cucumber java.Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with (1)">
     <configuration default="false" name="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -583,7 +529,7 @@
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/src/test/resources/features/UiTests" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -591,6 +537,78 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Feature: UiTests (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/UiTests.feature" />
+      <option name="GLUE" value="com.epam.app.stepDefinition" />
+      <option name="myNameFilter" value="" />
+      <option name="myGeneratedName" value="Feature: UiTests" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="my-app" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/UiTests.feature" />
+      <option name="GLUE" value="com.epam.app.stepDefinition" />
+      <option name="myNameFilter" value="^I have downloaded and parsed wsdl from url\, then generate wsdl\-based dummy xml file and fill it with$" />
+      <option name="myGeneratedName" value="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^I have downloaded and parsed wsdl from url\, then generate wsdl\-based dummy xml file and fill it with$&quot;" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="my-app" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Scenario: I have successfully logged in" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/UiTests.feature" />
+      <option name="GLUE" value="com.epam.app.stepDefinition" />
+      <option name="myNameFilter" value="^I have successfully logged in$" />
+      <option name="myGeneratedName" value="Scenario: I have successfully logged in" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^I have successfully logged in$&quot;" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="my-app" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -860,16 +878,20 @@
       <envs />
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Cucumber java.Feature: UiTests" />
-      <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestRunner" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestRunner" />
+      <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: UiTests (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: I have successfully logged in" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestRunner" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with" />
-        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: UiTests" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: UiTests (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: I have successfully logged in" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestRunner" />
+        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with" />
       </list>
     </recent_temporary>
   </component>
@@ -918,32 +940,46 @@
       <option name="presentableId" value="Default" />
       <updated>1517400196789</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit2&#10;">
+      <created>1517402029398</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1517402029398</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__UiTests - 2018.01.31 at 15h 08m 05s.xml">
-      <configuration name="Feature: UiTests" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__UiTests_(1) - 2018.01.31 at 16h 16m 29s.xml">
+      <configuration name="Feature: UiTests (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__UiTests - 2018.01.31 at 15h 08m 29s.xml">
-      <configuration name="Feature: UiTests" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__I_have_downloaded_and_parsed_wsdl_from_url,_then_generate_wsdl-based_dummy_xml_file_and_fill_it_with_(1) - 2018.01.31 at 15h 53m 44s.xml">
+      <configuration name="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__I_have_downloaded_and_parsed_wsdl_from_url,_then_generate_wsdl-based_dummy_xml_file_and_fill_it_with - 2018.01.31 at 15h 09m 58s.xml">
-      <configuration name="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__I_have_downloaded_and_parsed_wsdl_from_url,_then_generate_wsdl-based_dummy_xml_file_and_fill_it_with_(1) - 2018.01.31 at 15h 55m 14s.xml">
+      <configuration name="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__I_have_downloaded_and_parsed_wsdl_from_url,_then_generate_wsdl-based_dummy_xml_file_and_fill_it_with - 2018.01.31 at 15h 10m 10s.xml">
-      <configuration name="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__I_have_downloaded_and_parsed_wsdl_from_url,_then_generate_wsdl-based_dummy_xml_file_and_fill_it_with_(1) - 2018.01.31 at 15h 59m 34s.xml">
+      <configuration name="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.01.31 at 15h 10m 26s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="Scenario__I_have_downloaded_and_parsed_wsdl_from_url,_then_generate_wsdl-based_dummy_xml_file_and_fill_it_with_(1) - 2018.01.31 at 16h 00m 54s.xml">
+      <configuration name="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.01.31 at 15h 23m 43s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="Scenario__I_have_downloaded_and_parsed_wsdl_from_url,_then_generate_wsdl-based_dummy_xml_file_and_fill_it_with_(1) - 2018.01.31 at 16h 02m 09s.xml">
+      <configuration name="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.01.31 at 15h 25m 51s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="Scenario__I_have_downloaded_and_parsed_wsdl_from_url,_then_generate_wsdl-based_dummy_xml_file_and_fill_it_with_(1) - 2018.01.31 at 16h 05m 26s.xml">
+      <configuration name="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.01.31 at 15h 26m 59s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="Scenario__I_have_downloaded_and_parsed_wsdl_from_url,_then_generate_wsdl-based_dummy_xml_file_and_fill_it_with_(1) - 2018.01.31 at 16h 08m 49s.xml">
+      <configuration name="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with (1)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__I_have_downloaded_and_parsed_wsdl_from_url,_then_generate_wsdl-based_dummy_xml_file_and_fill_it_with_(1) - 2018.01.31 at 16h 21m 58s.xml">
+      <configuration name="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with (1)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__I_have_successfully_logged_in - 2018.01.31 at 15h 56m 49s.xml">
+      <configuration name="Scenario: I have successfully logged in" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="0">
@@ -971,7 +1007,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.77231467" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.88426626" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.88426626" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1000,6 +1036,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit2&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit2&#10;" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>
@@ -1078,31 +1118,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/cucumberTest/TestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="66" column="16" lean-forward="false" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2122#2123#0" expanded="true" />
+            <element signature="e#2220#2221#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/UiTests.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        <state relative-caret-position="85">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/cucumberTest/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
