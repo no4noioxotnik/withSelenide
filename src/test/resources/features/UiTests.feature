@@ -11,7 +11,7 @@ Feature:
     Then search for: Hack this
     And click on 3 -rd link
     And switch to the previous tab
-    And wait: 1000 milliseconds
+   # And wait: 1000 milliseconds
     And set login as: "<username>" and password as: "<password>"
     And assert that login error occured
     And chose to register from inside of error message

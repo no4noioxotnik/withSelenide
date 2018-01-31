@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "features.UiTests"
+        features = "features"
         ,glue={"stepDefinition"}
 )
 
