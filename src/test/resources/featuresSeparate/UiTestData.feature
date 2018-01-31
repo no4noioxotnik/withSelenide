@@ -9,7 +9,7 @@ Feature:
     Given browser: Chrome
     When open webpage: https://www.hackthissite.org/info/about
     Then user enters Credentials to LogIn
-      | username   | password |
+      | Username   | Password |
       | testuser_1 | Test@153 |
       | testuser_2 | Test@153 |
       | John Dow   | 153      |

@@ -11,6 +11,7 @@ import org.openqa.selenium.NoSuchElementException;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import static com.codeborne.selenide.Selenide.*;
@@ -55,13 +56,15 @@ public class Test_MainPage {
         $(By.xpath("/html/body/table/tbody//tbody/tr[4]/td/input")).followLink();
     }
 
-    @And("^user enters Credentials to LogIn$")
-    public void user_enters_testuser__and_Test(DataTable usercredentials) throws Throwable {
-        List<List<String>> data = usercredentials.raw();
-        $(By.name("username")).pressEnter();
-        $(By.name("username")).setValue(data.get(0).get(0));
-        $(By.name("password")).setValue(data.get(0).get(1));
-        $(By.xpath("/html/body/table/tbody//tbody/tr[4]/td/input")).followLink();
+    @When("^user enters Credentials to LogIn$")
+    public void user_enters_testuser_and_Test(DataTable usercredentials) throws Throwable {
+
+        for (Map<String,String> data : usercredentials.asMaps(String.class,String.class)) {
+            $(By.name("username")).pressEnter();
+            $(By.name("username")).setValue(data.get("Username"));
+            $(By.name("password")).setValue(data.get("Password"));
+            $(By.xpath("/html/body/table/tbody//tbody/tr[4]/td/input")).followLink();
+        }
     }
 
     @And("^switch to the previous tab$")

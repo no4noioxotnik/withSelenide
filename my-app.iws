@@ -23,8 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d6b4635-5e93-43a9-8295-38a5395c04df" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/Pico/UiTestShare.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/epam/app/Pico/UiTestShare.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app.iws" afterPath="$PROJECT_DIR$/my-app.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/featuresSeparate/UiTestData.feature" afterPath="$PROJECT_DIR$/src/test/resources/featuresSeparate/UiTestData.feature" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -213,7 +215,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/resources/featuresSeparate/UiTestData.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+              <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -234,12 +236,12 @@
       <file leaf-file-name="Test_MainPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="61" column="60" lean-forward="true" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
+            <state relative-caret-position="115">
+              <caret line="59" column="16" lean-forward="false" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2606#2607#0" expanded="true" />
-                <element signature="e#2704#2705#0" expanded="true" />
+                <element signature="e#2694#2695#0" expanded="true" />
+                <element signature="e#2792#2793#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -284,9 +286,10 @@
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Given.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/UiTests/UiTests.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/UiTests.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/UiTestData.feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/cucumberTest/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/featuresSeparate/UiTestData.feature" />
       </list>
     </option>
   </component>
@@ -999,11 +1002,21 @@
       <option name="project" value="LOCAL" />
       <updated>1517407452535</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="data-driven with cucumber">
+      <created>1517407568102</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1517407568102</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="Scenario__I_have_downloaded_and_parsed_wsdl_from_url,_then_generate_wsdl-based_dummy_xml_file_and_fill_it_with - 2018.01.31 at 17h 03m 35s.xml">
+      <configuration name="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__I_have_downloaded_and_parsed_wsdl_from_url,_then_generate_wsdl-based_dummy_xml_file_and_fill_it_with - 2018.01.31 at 17h 21m 16s.xml">
       <configuration name="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="Scenario__I_have_downloaded_and_parsed_wsdl_from_url,_then_generate_wsdl-based_dummy_xml_file_and_fill_it_with_(1) - 2018.01.31 at 16h 49m 28s.xml">
@@ -1011,9 +1024,6 @@
     </history-entry>
     <history-entry file="Scenario__I_have_downloaded_and_parsed_wsdl_from_url,_then_generate_wsdl-based_dummy_xml_file_and_fill_it_with_(2) - 2018.01.31 at 16h 50m 37s.xml">
       <configuration name="Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with (2)" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="TestRunner - 2018.01.31 at 16h 48m 12s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestRunner - 2018.01.31 at 16h 50m 49s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
@@ -1048,7 +1058,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1066,7 +1076,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1171,15 +1181,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/Pico/UiTestShare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="61" column="60" lean-forward="true" selection-start-line="61" selection-start-column="60" selection-end-line="61" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2606#2607#0" expanded="true" />
-            <element signature="e#2704#2705#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1201,18 +1207,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/Pico/UiTestShare.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="115">
+          <caret line="59" column="16" lean-forward="false" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2694#2695#0" expanded="true" />
+            <element signature="e#2792#2793#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/featuresSeparate/UiTestData.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding />
         </state>
       </provider>
