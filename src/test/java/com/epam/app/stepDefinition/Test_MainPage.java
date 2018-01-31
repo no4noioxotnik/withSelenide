@@ -1,6 +1,7 @@
 
 package com.epam.app.stepDefinition;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -51,6 +52,15 @@ public class Test_MainPage {
         $(By.name("username")).pressEnter();
         $(By.name("username")).setValue(login);
         $(By.name("password")).setValue(password);
+        $(By.xpath("/html/body/table/tbody//tbody/tr[4]/td/input")).followLink();
+    }
+
+    @And("^user enters Credentials to LogIn$")
+    public void user_enters_testuser__and_Test(DataTable usercredentials) throws Throwable {
+        List<List<String>> data = usercredentials.raw();
+        $(By.name("username")).pressEnter();
+        $(By.name("username")).setValue(data.get(0).get(0));
+        $(By.name("password")).setValue(data.get(0).get(1));
         $(By.xpath("/html/body/table/tbody//tbody/tr[4]/td/input")).followLink();
     }
 
