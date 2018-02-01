@@ -6,6 +6,7 @@ import com.eviware.soapui.model.iface.Request;
 import com.eviware.soapui.model.iface.Response;
 import com.eviware.soapui.support.SoapUIException;
 import org.apache.xmlbeans.XmlException;
+import org.junit.Test;
 
 import java.io.IOException;
 
@@ -17,7 +18,7 @@ import static junit.framework.TestCase.assertTrue;
  */
 public class SoapClExp {
 
-
+@Test
     public void SoapCl() throws IOException, SoapUIException, Request.SubmitException, XmlException {
         WsdlProject project = new WsdlProject();
         // import amazon wsdl

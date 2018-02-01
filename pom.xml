@@ -21,6 +21,7 @@
 
   <build>
   <plugins>
+
     <plugin>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-compiler-plugin</artifactId>
@@ -30,6 +31,7 @@
         <target>1.8</target>
       </configuration>
     </plugin>
+
     <plugin>
       <groupId>com.smartbear.soapui</groupId>
       <artifactId>soapui-maven-plugin</artifactId>
@@ -132,6 +134,13 @@
       <scope>test</scope>
     </dependency>
 
+    <dependency>
+      <groupId>ru.yandex.qatools.allure</groupId>
+      <artifactId>allure-cucumber-jvm-adaptor</artifactId>
+      <version>1.6.2</version>
+      <scope>test</scope>
+    </dependency>
+
     <!-- smartbearsSoapClient -->
 
     <dependency>
@@ -194,65 +203,6 @@
       <groupId>wsdl4j</groupId>
       <artifactId>wsdl4j</artifactId>
       <version>1.6.2</version>
-    </dependency>
-
-    <!-- Unirest parts -->
-
-    <dependency>
-      <groupId>com.mashape.unirest</groupId>
-      <artifactId>unirest-java</artifactId>
-      <version>1.4.9</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>commons-io</groupId>
-      <artifactId>commons-io</artifactId>
-      <version>2.4</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>commons-codec</groupId>
-      <artifactId>commons-codec</artifactId>
-      <version>1.10</version>
-      <scope>test</scope>
-    </dependency>
-
-    <!--reficio client-->
-
-    <dependency>
-      <groupId>org.reficio</groupId>
-      <artifactId>soap-builder</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.reficio</groupId>
-      <artifactId>soap-client</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
-    </dependency>
-
-    <!-- mina.apache.org/ftpserver-project/ -->
-
-    <dependency>
-      <groupId>org.apache.ftpserver</groupId>
-      <artifactId>ftpserver-core</artifactId>
-      <version>1.1.1</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.apache.ftpserver</groupId>
-      <artifactId>ftplet-api</artifactId>
-      <version>1.1.1</version>
-    </dependency>
-
-    <!-- https://mvnrepository.com/artifact/org.tobereplaced/nio.file -->
-
-    <dependency>
-      <groupId>org.tobereplaced</groupId>
-      <artifactId>nio.file</artifactId>
-      <version>0.4.0</version>
     </dependency>
 
   </dependencies>
