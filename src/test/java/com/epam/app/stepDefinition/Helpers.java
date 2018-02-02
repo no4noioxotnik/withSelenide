@@ -8,9 +8,7 @@ import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.Enumeration;
 
-/**
- * Created by Rustam_Ragimov on 2/1/2018.
- */
+
 public class Helpers {
 
     @And("^get host IP address$")
