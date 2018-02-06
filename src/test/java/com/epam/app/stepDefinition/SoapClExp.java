@@ -4,7 +4,6 @@ import com.epam.app.share.SClShare;
 import com.eviware.soapui.impl.WsdlInterfaceFactory;
 import com.eviware.soapui.impl.wsdl.*;
 import com.eviware.soapui.model.iface.Request;
-import com.eviware.soapui.model.propertyexpansion.PropertyExpansionContext;
 import com.eviware.soapui.support.SoapUIException;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
@@ -34,22 +33,15 @@ import java.io.StringWriter;
 
 public class SoapClExp  {
 
-    private WsdlSubmit submit;
     private String proxyUsername;
     private String proxyPassword;
     private WsdlProject project;
     private WsdlInterface iface;
-    private WsdlRequest request;
-    private String w;
     private Document domdoc;
     private XModifier modifier;
-    private WsdlOperation operation;
     private String endpUri;
-    private PropertyExpansionContext context;
     private String username;
     private String password;
-    public String soapResponse = null;
-    private int statusCode = 0;
 
     private SClShare b;
 
@@ -72,24 +64,21 @@ public class SoapClExp  {
         // import amazon wsdl
     @And("^Wsdl with url: (http|https)://(.*)$")
     public void wsdlUrl (String protocol, String url) throws SoapUIException {
-    WsdlInterface iface = WsdlInterfaceFactory
-            .importWsdl(project, protocol + "://" + proxyUsername + proxyPassword + url, true)[0];
-    this.iface = iface;
+        this.iface = WsdlInterfaceFactory
+                .importWsdl(project, protocol + "://" + proxyUsername + proxyPassword + url, true)[0];
     }
 
     @When("^I get wsdl, I want to get a new empty request for the operation$")
     public void emptyRequest() throws IOException, SAXException, ParserConfigurationException, UnirestException {
-        this.w = iface.getOperationList().get(0).getRequestList().get(0).getRequestContent();
+        String w = iface.getOperationList().get(0).getRequestList().get(0).getRequestContent();
         WsdlOperation operation = (WsdlOperation) iface.getOperationList().get(0);
         WsdlRequest request = operation.addNewRequest("My request");
         request.setRequestContent(operation.createRequest(true));
-        this.request = request;
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setNamespaceAware(true);
         DocumentBuilder builder = factory.newDocumentBuilder();
         this.domdoc = builder.parse(new ByteArrayInputStream(w.getBytes()));
         this.modifier = new XModifier(domdoc);
-        this.operation = operation;
     }
 
     @Then("^set namespace: (.+) to value: (.+)$")
