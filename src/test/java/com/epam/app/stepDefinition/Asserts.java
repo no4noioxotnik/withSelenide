@@ -3,6 +3,7 @@ package com.epam.app.stepDefinition;
 import com.epam.app.share.SClShare;
 import cucumber.api.java.en.And;
 import javax.xml.soap.MessageFactory;
+import javax.xml.soap.SOAPException;
 import javax.xml.soap.SOAPMessage;
 import javax.xml.soap.SOAPPart;
 import javax.xml.transform.stream.StreamSource;
@@ -40,7 +41,7 @@ public class Asserts {
         soapPart.getContent();
         try {
             soapPart.getEnvelope().getBody().getFault().getFaultCode();
-        } catch (NullPointerException e) {
+        } catch (SOAPException e) {
         }
         return s;
     }
