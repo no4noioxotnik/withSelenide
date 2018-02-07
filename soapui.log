@@ -1,33 +1,328 @@
-2018-02-07 17:43:00,111 WARN  [SoapUI] Missing folder [C:\Users\Rustam_Ragimov\Open\custom\withSelenide_\ext] for external libraries
-2018-02-07 17:43:00,303 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\Rustam_Ragimov\soapui-settings.xml]
-2018-02-07 17:43:01,901 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/xop.xsd with targetNamespace http://www.w3.org/2004/08/xop/include
-2018-02-07 17:43:01,945 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/XMLSchema.xsd with targetNamespace http://www.w3.org/2001/XMLSchema
-2018-02-07 17:43:01,946 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/xml.xsd with targetNamespace http://www.w3.org/XML/1998/namespace
-2018-02-07 17:43:01,949 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/swaref.xsd with targetNamespace http://ws-i.org/profiles/basic/1.1/xsd
-2018-02-07 17:43:01,950 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/xmime200505.xsd with targetNamespace http://www.w3.org/2005/05/xmlmime
-2018-02-07 17:43:01,952 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/xmime200411.xsd with targetNamespace http://www.w3.org/2004/11/xmlmime
-2018-02-07 17:43:01,954 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope.xsd with targetNamespace http://schemas.xmlsoap.org/soap/envelope/
-2018-02-07 17:43:01,958 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd with targetNamespace http://schemas.xmlsoap.org/soap/encoding/
-2018-02-07 17:43:01,960 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope12.xsd with targetNamespace http://www.w3.org/2003/05/soap-envelope
-2018-02-07 17:43:01,965 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd with targetNamespace http://www.w3.org/2003/05/soap-encoding
-2018-02-07 17:43:03,904 INFO  [SchemaUtils] Loading schema types from [https://UserReportServiceFZPG:s1CeB5Ams@db.1c-ksu.ru/UH_Test_Zolotarev/ws/ReportServiceFZPG?wsdl]
-2018-02-07 17:43:03,904 INFO  [SchemaUtils] Getting schema https://UserReportServiceFZPG:s1CeB5Ams@db.1c-ksu.ru/UH_Test_Zolotarev/ws/ReportServiceFZPG?wsdl
-2018-02-07 17:43:04,166 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://www.w3.org/2003/05/soap-encoding').
-2018-02-07 17:43:04,166 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://www.w3.org/2003/05/soap-encoding').
-2018-02-07 17:43:04,167 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://www.w3.org/2003/05/soap-encoding').
-2018-02-07 17:43:04,167 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://www.w3.org/2003/05/soap-encoding').
-2018-02-07 17:43:04,167 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://www.w3.org/2003/05/soap-encoding').
-2018-02-07 17:43:04,167 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://schemas.xmlsoap.org/soap/encoding/').
-2018-02-07 17:43:04,167 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://schemas.xmlsoap.org/soap/encoding/').
-2018-02-07 17:43:04,168 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://schemas.xmlsoap.org/soap/encoding/').
-2018-02-07 17:43:04,168 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://schemas.xmlsoap.org/soap/encoding/').
-2018-02-07 17:43:04,168 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://schemas.xmlsoap.org/soap/encoding/').
-2018-02-07 17:43:04,172 INFO  [WsdlImporter] Finding importer for {http://1c.ru}ReportServiceFZPGSoap12Binding
-2018-02-07 17:43:04,175 INFO  [WsdlImporter] Importing binding {http://1c.ru}ReportServiceFZPGSoap12Binding
-2018-02-07 17:43:04,204 INFO  [Soap12HttpBindingImporter] importing endpoint https://db.1c-ksu.ru/UH_Test_Zolotarev/ws/ReportServiceFZPG
-2018-02-07 17:43:04,213 INFO  [Soap12HttpBindingImporter] importing operation Request
-2018-02-07 17:43:04,311 INFO  [WsdlImporter] Finding importer for {http://1c.ru}ReportServiceFZPGSoapBinding
-2018-02-07 17:43:04,311 INFO  [WsdlImporter] Importing binding {http://1c.ru}ReportServiceFZPGSoapBinding
-2018-02-07 17:43:04,312 INFO  [Soap11HttpBindingImporter] importing endpoint https://db.1c-ksu.ru/UH_Test_Zolotarev/ws/ReportServiceFZPG
-2018-02-07 17:43:04,312 INFO  [Soap11HttpBindingImporter] importing operation Request
-2018-02-07 17:43:06,492 INFO  [DefaultFtpServer] FTP server started
+2018-02-07 20:10:38,660 WARN  [SoapUI] Missing folder [C:\Users\Rustam_Ragimov\Open\custom\withSelenide_\ext] for external libraries
+2018-02-07 20:10:38,875 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\Rustam_Ragimov\soapui-settings.xml]
+2018-02-07 20:10:40,332 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/xop.xsd with targetNamespace http://www.w3.org/2004/08/xop/include
+2018-02-07 20:10:40,363 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/XMLSchema.xsd with targetNamespace http://www.w3.org/2001/XMLSchema
+2018-02-07 20:10:40,363 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/xml.xsd with targetNamespace http://www.w3.org/XML/1998/namespace
+2018-02-07 20:10:40,380 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/swaref.xsd with targetNamespace http://ws-i.org/profiles/basic/1.1/xsd
+2018-02-07 20:10:40,381 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/xmime200505.xsd with targetNamespace http://www.w3.org/2005/05/xmlmime
+2018-02-07 20:10:40,383 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/xmime200411.xsd with targetNamespace http://www.w3.org/2004/11/xmlmime
+2018-02-07 20:10:40,384 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope.xsd with targetNamespace http://schemas.xmlsoap.org/soap/envelope/
+2018-02-07 20:10:40,385 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd with targetNamespace http://schemas.xmlsoap.org/soap/encoding/
+2018-02-07 20:10:40,385 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope12.xsd with targetNamespace http://www.w3.org/2003/05/soap-envelope
+2018-02-07 20:10:40,385 INFO  [SchemaUtils] Added default schema from file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd with targetNamespace http://www.w3.org/2003/05/soap-encoding
+2018-02-07 20:10:42,166 INFO  [SchemaUtils] Loading schema types from [https://UserReportServiceFZPG:s1CeB5Ams@db.1c-ksu.ru/UH_Test_Zolotarev/ws/ReportServiceFZPG?wsdl]
+2018-02-07 20:10:42,166 INFO  [SchemaUtils] Getting schema https://UserReportServiceFZPG:s1CeB5Ams@db.1c-ksu.ru/UH_Test_Zolotarev/ws/ReportServiceFZPG?wsdl
+2018-02-07 20:10:42,404 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://www.w3.org/2003/05/soap-encoding').
+2018-02-07 20:10:42,404 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://www.w3.org/2003/05/soap-encoding').
+2018-02-07 20:10:42,404 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://www.w3.org/2003/05/soap-encoding').
+2018-02-07 20:10:42,404 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://www.w3.org/2003/05/soap-encoding').
+2018-02-07 20:10:42,404 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://www.w3.org/2003/05/soap-encoding').
+2018-02-07 20:10:42,404 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://schemas.xmlsoap.org/soap/encoding/').
+2018-02-07 20:10:42,404 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://schemas.xmlsoap.org/soap/encoding/').
+2018-02-07 20:10:42,404 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://schemas.xmlsoap.org/soap/encoding/').
+2018-02-07 20:10:42,404 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://schemas.xmlsoap.org/soap/encoding/').
+2018-02-07 20:10:42,404 WARN  [SchemaUtils] Error: jar:file:/C:/Users/Rustam_Ragimov/.m2/repository/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://schemas.xmlsoap.org/soap/encoding/').
+2018-02-07 20:10:42,404 INFO  [WsdlImporter] Finding importer for {http://1c.ru}ReportServiceFZPGSoap12Binding
+2018-02-07 20:10:42,404 INFO  [WsdlImporter] Importing binding {http://1c.ru}ReportServiceFZPGSoap12Binding
+2018-02-07 20:10:42,436 INFO  [Soap12HttpBindingImporter] importing endpoint https://db.1c-ksu.ru/UH_Test_Zolotarev/ws/ReportServiceFZPG
+2018-02-07 20:10:42,436 INFO  [Soap12HttpBindingImporter] importing operation Request
+2018-02-07 20:10:42,536 INFO  [WsdlImporter] Finding importer for {http://1c.ru}ReportServiceFZPGSoapBinding
+2018-02-07 20:10:42,536 INFO  [WsdlImporter] Importing binding {http://1c.ru}ReportServiceFZPGSoapBinding
+2018-02-07 20:10:42,536 INFO  [Soap11HttpBindingImporter] importing endpoint https://db.1c-ksu.ru/UH_Test_Zolotarev/ws/ReportServiceFZPG
+2018-02-07 20:10:42,536 INFO  [Soap11HttpBindingImporter] importing operation Request
+2018-02-07 20:10:44,791 INFO  [DefaultFtpServer] FTP server started
+2018-02-07 20:11:01,596 INFO  [FtpLoggingFilter] CREATED
+2018-02-07 20:11:01,602 INFO  [FtpLoggingFilter] OPENED
+2018-02-07 20:11:01,614 INFO  [FtpLoggingFilter] SENT: 220 Service ready for new user.
+
+2018-02-07 20:11:01,616 INFO  [FtpLoggingFilter] RECEIVED: USER anonymous
+2018-02-07 20:11:01,618 INFO  [FtpLoggingFilter] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+2018-02-07 20:11:01,619 INFO  [FtpLoggingFilter] RECEIVED: PASS *****
+2018-02-07 20:11:01,621 WARN  [PASS] User failed to log in
+2018-02-07 20:11:02,123 WARN  [PASS] Login failure - anonymous
+2018-02-07 20:11:02,126 INFO  [FtpLoggingFilter] SENT: 530 Authentication failed.
+
+2018-02-07 20:11:02,127 INFO  [FtpLoggingFilter] RECEIVED: QUIT
+2018-02-07 20:11:02,134 INFO  [FtpLoggingFilter] CREATED
+2018-02-07 20:11:02,135 INFO  [FtpLoggingFilter] OPENED
+2018-02-07 20:11:02,137 INFO  [FtpLoggingFilter] SENT: 221 Goodbye.
+
+2018-02-07 20:11:02,139 INFO  [FtpLoggingFilter] CLOSED
+2018-02-07 20:11:02,139 INFO  [FtpLoggingFilter] SENT: 220 Service ready for new user.
+
+2018-02-07 20:11:02,141 INFO  [FtpLoggingFilter] RECEIVED: USER user
+2018-02-07 20:11:02,143 INFO  [FtpLoggingFilter] SENT: 331 User name okay, need password for user.
+
+2018-02-07 20:11:02,144 INFO  [FtpLoggingFilter] RECEIVED: PASS *****
+2018-02-07 20:11:02,153 INFO  [PASS] Login success - user
+2018-02-07 20:11:02,154 INFO  [FtpLoggingFilter] SENT: 230 User logged in, proceed.
+
+2018-02-07 20:11:02,154 INFO  [FtpLoggingFilter] RECEIVED: SYST
+2018-02-07 20:11:02,155 INFO  [FtpLoggingFilter] SENT: 215 UNIX Type: Apache FtpServer
+
+2018-02-07 20:11:02,155 INFO  [FtpLoggingFilter] RECEIVED: PWD
+2018-02-07 20:11:02,159 INFO  [FtpLoggingFilter] SENT: 257 "/" is current directory.
+
+2018-02-07 20:11:02,160 INFO  [FtpLoggingFilter] RECEIVED: TYPE I
+2018-02-07 20:11:02,162 INFO  [FtpLoggingFilter] SENT: 200 Command TYPE okay.
+
+2018-02-07 20:11:02,162 INFO  [FtpLoggingFilter] RECEIVED: SIZE /
+2018-02-07 20:11:02,163 INFO  [FtpLoggingFilter] SENT: 550 /: Not a plain file.
+
+2018-02-07 20:11:02,164 INFO  [FtpLoggingFilter] RECEIVED: CWD /
+2018-02-07 20:11:02,166 INFO  [FtpLoggingFilter] SENT: 250 Directory changed to /
+
+2018-02-07 20:11:02,166 INFO  [FtpLoggingFilter] RECEIVED: EPSV
+2018-02-07 20:11:02,168 INFO  [FtpLoggingFilter] SENT: 229 Entering Passive Mode (|||56881|)
+
+2018-02-07 20:11:02,169 INFO  [FtpLoggingFilter] RECEIVED: LIST -l
+2018-02-07 20:11:02,185 WARN  [PassivePorts] Releasing unreserved passive port: 56881
+2018-02-07 20:11:02,185 INFO  [FtpLoggingFilter] SENT: 150 File status okay; about to open data connection.
+
+2018-02-07 20:11:02,185 INFO  [FtpLoggingFilter] CLOSED
+2018-02-07 20:11:03,355 INFO  [FtpLoggingFilter] CREATED
+2018-02-07 20:11:03,356 INFO  [FtpLoggingFilter] OPENED
+2018-02-07 20:11:03,358 INFO  [FtpLoggingFilter] SENT: 220 Service ready for new user.
+
+2018-02-07 20:11:03,358 INFO  [FtpLoggingFilter] RECEIVED: USER anonymous
+2018-02-07 20:11:03,359 INFO  [FtpLoggingFilter] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+2018-02-07 20:11:03,359 INFO  [FtpLoggingFilter] RECEIVED: PASS *****
+2018-02-07 20:11:03,360 WARN  [PASS] User failed to log in
+2018-02-07 20:11:03,860 WARN  [PASS] Login failure - anonymous
+2018-02-07 20:11:03,863 INFO  [FtpLoggingFilter] SENT: 530 Authentication failed.
+
+2018-02-07 20:11:03,863 INFO  [FtpLoggingFilter] RECEIVED: QUIT
+2018-02-07 20:11:03,866 INFO  [FtpLoggingFilter] SENT: 221 Goodbye.
+
+2018-02-07 20:11:03,867 INFO  [FtpLoggingFilter] CLOSED
+2018-02-07 20:11:03,869 INFO  [FtpLoggingFilter] CREATED
+2018-02-07 20:11:03,870 INFO  [FtpLoggingFilter] OPENED
+2018-02-07 20:11:03,874 INFO  [FtpLoggingFilter] SENT: 220 Service ready for new user.
+
+2018-02-07 20:11:03,874 INFO  [FtpLoggingFilter] RECEIVED: USER user
+2018-02-07 20:11:03,876 INFO  [FtpLoggingFilter] SENT: 331 User name okay, need password for user.
+
+2018-02-07 20:11:03,877 INFO  [FtpLoggingFilter] RECEIVED: PASS *****
+2018-02-07 20:11:03,879 INFO  [PASS] Login success - user
+2018-02-07 20:11:03,880 INFO  [FtpLoggingFilter] SENT: 230 User logged in, proceed.
+
+2018-02-07 20:11:03,880 INFO  [FtpLoggingFilter] RECEIVED: SYST
+2018-02-07 20:11:03,882 INFO  [FtpLoggingFilter] SENT: 215 UNIX Type: Apache FtpServer
+
+2018-02-07 20:11:03,883 INFO  [FtpLoggingFilter] RECEIVED: PWD
+2018-02-07 20:11:03,884 INFO  [FtpLoggingFilter] SENT: 257 "/" is current directory.
+
+2018-02-07 20:11:03,885 INFO  [FtpLoggingFilter] RECEIVED: TYPE I
+2018-02-07 20:11:03,886 INFO  [FtpLoggingFilter] SENT: 200 Command TYPE okay.
+
+2018-02-07 20:11:03,887 INFO  [FtpLoggingFilter] RECEIVED: SIZE /
+2018-02-07 20:11:03,889 INFO  [FtpLoggingFilter] SENT: 550 /: Not a plain file.
+
+2018-02-07 20:11:03,889 INFO  [FtpLoggingFilter] RECEIVED: CWD /
+2018-02-07 20:11:03,891 INFO  [FtpLoggingFilter] SENT: 250 Directory changed to /
+
+2018-02-07 20:11:03,891 INFO  [FtpLoggingFilter] RECEIVED: EPSV
+2018-02-07 20:11:03,894 INFO  [FtpLoggingFilter] SENT: 229 Entering Passive Mode (|||56885|)
+
+2018-02-07 20:11:03,895 INFO  [FtpLoggingFilter] RECEIVED: LIST -l
+2018-02-07 20:11:03,901 WARN  [PassivePorts] Releasing unreserved passive port: 56885
+2018-02-07 20:11:03,902 INFO  [FtpLoggingFilter] SENT: 150 File status okay; about to open data connection.
+
+2018-02-07 20:11:03,903 WARN  [FtpLoggingFilter] EXCEPTION :
+java.io.IOException: An established connection was aborted by the software in your host machine
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2018-02-07 20:11:03,906 ERROR [DefaultFtpHandler] Exception caught, closing session
+java.io.IOException: An established connection was aborted by the software in your host machine
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2018-02-07 20:11:03,907 INFO  [FtpLoggingFilter] SENT: 226 Closing data connection.
+
+2018-02-07 20:11:03,907 INFO  [FtpLoggingFilter] CLOSED
+2018-02-07 20:11:04,103 INFO  [FtpLoggingFilter] CREATED
+2018-02-07 20:11:04,103 INFO  [FtpLoggingFilter] OPENED
+2018-02-07 20:11:04,104 INFO  [FtpLoggingFilter] SENT: 220 Service ready for new user.
+
+2018-02-07 20:11:04,105 INFO  [FtpLoggingFilter] RECEIVED: USER anonymous
+2018-02-07 20:11:04,106 INFO  [FtpLoggingFilter] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+2018-02-07 20:11:04,106 INFO  [FtpLoggingFilter] RECEIVED: PASS *****
+2018-02-07 20:11:04,106 WARN  [PASS] User failed to log in
+2018-02-07 20:11:04,606 WARN  [PASS] Login failure - anonymous
+2018-02-07 20:11:04,607 INFO  [FtpLoggingFilter] SENT: 530 Authentication failed.
+
+2018-02-07 20:11:04,608 INFO  [FtpLoggingFilter] RECEIVED: QUIT
+2018-02-07 20:11:04,611 INFO  [FtpLoggingFilter] SENT: 221 Goodbye.
+
+2018-02-07 20:11:04,612 INFO  [FtpLoggingFilter] CLOSED
+2018-02-07 20:11:04,615 INFO  [FtpLoggingFilter] CREATED
+2018-02-07 20:11:04,615 INFO  [FtpLoggingFilter] OPENED
+2018-02-07 20:11:04,617 INFO  [FtpLoggingFilter] SENT: 220 Service ready for new user.
+
+2018-02-07 20:11:04,618 INFO  [FtpLoggingFilter] RECEIVED: USER user
+2018-02-07 20:11:04,621 INFO  [FtpLoggingFilter] SENT: 331 User name okay, need password for user.
+
+2018-02-07 20:11:04,621 INFO  [FtpLoggingFilter] RECEIVED: PASS *****
+2018-02-07 20:11:04,623 INFO  [PASS] Login success - user
+2018-02-07 20:11:04,624 INFO  [FtpLoggingFilter] SENT: 230 User logged in, proceed.
+
+2018-02-07 20:11:04,624 INFO  [FtpLoggingFilter] RECEIVED: SYST
+2018-02-07 20:11:04,626 INFO  [FtpLoggingFilter] SENT: 215 UNIX Type: Apache FtpServer
+
+2018-02-07 20:11:04,626 INFO  [FtpLoggingFilter] RECEIVED: PWD
+2018-02-07 20:11:04,628 INFO  [FtpLoggingFilter] SENT: 257 "/" is current directory.
+
+2018-02-07 20:11:04,629 INFO  [FtpLoggingFilter] RECEIVED: TYPE I
+2018-02-07 20:11:04,631 INFO  [FtpLoggingFilter] SENT: 200 Command TYPE okay.
+
+2018-02-07 20:11:04,631 INFO  [FtpLoggingFilter] RECEIVED: SIZE /
+2018-02-07 20:11:04,633 INFO  [FtpLoggingFilter] SENT: 550 /: Not a plain file.
+
+2018-02-07 20:11:04,634 INFO  [FtpLoggingFilter] RECEIVED: CWD /
+2018-02-07 20:11:04,636 INFO  [FtpLoggingFilter] SENT: 250 Directory changed to /
+
+2018-02-07 20:11:04,636 INFO  [FtpLoggingFilter] RECEIVED: EPSV
+2018-02-07 20:11:04,639 INFO  [FtpLoggingFilter] SENT: 229 Entering Passive Mode (|||56889|)
+
+2018-02-07 20:11:04,641 INFO  [FtpLoggingFilter] RECEIVED: LIST -l
+2018-02-07 20:11:04,646 WARN  [PassivePorts] Releasing unreserved passive port: 56889
+2018-02-07 20:11:04,648 INFO  [FtpLoggingFilter] SENT: 150 File status okay; about to open data connection.
+
+2018-02-07 20:11:04,648 INFO  [FtpLoggingFilter] SENT: 226 Closing data connection.
+
+2018-02-07 20:11:04,648 INFO  [FtpLoggingFilter] CLOSED
+2018-02-07 20:11:05,571 INFO  [FtpLoggingFilter] CREATED
+2018-02-07 20:11:05,571 INFO  [FtpLoggingFilter] OPENED
+2018-02-07 20:11:05,572 INFO  [FtpLoggingFilter] SENT: 220 Service ready for new user.
+
+2018-02-07 20:11:05,572 INFO  [FtpLoggingFilter] RECEIVED: USER anonymous
+2018-02-07 20:11:05,573 INFO  [FtpLoggingFilter] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+2018-02-07 20:11:05,573 INFO  [FtpLoggingFilter] RECEIVED: PASS *****
+2018-02-07 20:11:05,573 WARN  [PASS] User failed to log in
+2018-02-07 20:11:06,073 WARN  [PASS] Login failure - anonymous
+2018-02-07 20:11:06,074 INFO  [FtpLoggingFilter] SENT: 530 Authentication failed.
+
+2018-02-07 20:11:06,075 INFO  [FtpLoggingFilter] RECEIVED: QUIT
+2018-02-07 20:11:06,078 INFO  [FtpLoggingFilter] SENT: 221 Goodbye.
+
+2018-02-07 20:11:06,079 INFO  [FtpLoggingFilter] CLOSED
+2018-02-07 20:11:06,081 INFO  [FtpLoggingFilter] CREATED
+2018-02-07 20:11:06,082 INFO  [FtpLoggingFilter] OPENED
+2018-02-07 20:11:06,084 INFO  [FtpLoggingFilter] SENT: 220 Service ready for new user.
+
+2018-02-07 20:11:06,085 INFO  [FtpLoggingFilter] RECEIVED: USER user
+2018-02-07 20:11:06,087 INFO  [FtpLoggingFilter] SENT: 331 User name okay, need password for user.
+
+2018-02-07 20:11:06,087 INFO  [FtpLoggingFilter] RECEIVED: PASS *****
+2018-02-07 20:11:06,089 INFO  [PASS] Login success - user
+2018-02-07 20:11:06,090 INFO  [FtpLoggingFilter] SENT: 230 User logged in, proceed.
+
+2018-02-07 20:11:06,090 INFO  [FtpLoggingFilter] RECEIVED: SYST
+2018-02-07 20:11:06,092 INFO  [FtpLoggingFilter] SENT: 215 UNIX Type: Apache FtpServer
+
+2018-02-07 20:11:06,092 INFO  [FtpLoggingFilter] RECEIVED: PWD
+2018-02-07 20:11:06,094 INFO  [FtpLoggingFilter] SENT: 257 "/" is current directory.
+
+2018-02-07 20:11:06,094 INFO  [FtpLoggingFilter] RECEIVED: TYPE I
+2018-02-07 20:11:06,096 INFO  [FtpLoggingFilter] SENT: 200 Command TYPE okay.
+
+2018-02-07 20:11:06,097 INFO  [FtpLoggingFilter] RECEIVED: SIZE /test.txt
+2018-02-07 20:11:06,099 INFO  [FtpLoggingFilter] SENT: 213 0
+
+2018-02-07 20:11:06,100 INFO  [FtpLoggingFilter] RECEIVED: CWD /test.txt
+2018-02-07 20:11:06,102 INFO  [FtpLoggingFilter] SENT: 550 No such directory.
+
+2018-02-07 20:11:06,102 INFO  [FtpLoggingFilter] RECEIVED: EPSV
+2018-02-07 20:11:06,105 INFO  [FtpLoggingFilter] SENT: 229 Entering Passive Mode (|||56893|)
+
+2018-02-07 20:11:06,108 INFO  [FtpLoggingFilter] RECEIVED: RETR /test.txt
+2018-02-07 20:11:06,114 INFO  [RETR] File downloaded /test.txt
+2018-02-07 20:11:06,115 WARN  [PassivePorts] Releasing unreserved passive port: 56893
+2018-02-07 20:11:06,115 INFO  [FtpLoggingFilter] SENT: 150 File status okay; about to open data connection.
+
+2018-02-07 20:11:06,115 INFO  [FtpLoggingFilter] SENT: 226 Transfer complete.
+
+2018-02-07 20:11:06,116 INFO  [FtpLoggingFilter] CLOSED
+2018-02-07 20:11:07,546 INFO  [FtpLoggingFilter] CREATED
+2018-02-07 20:11:07,546 INFO  [FtpLoggingFilter] OPENED
+2018-02-07 20:11:07,548 INFO  [FtpLoggingFilter] SENT: 220 Service ready for new user.
+
+2018-02-07 20:11:07,548 INFO  [FtpLoggingFilter] RECEIVED: USER anonymous
+2018-02-07 20:11:07,550 INFO  [FtpLoggingFilter] RECEIVED: PASS *****
+2018-02-07 20:11:07,550 WARN  [PASS] User failed to log in
+2018-02-07 20:11:08,052 WARN  [PASS] Login failure - anonymous
+2018-02-07 20:11:08,054 INFO  [FtpLoggingFilter] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+2018-02-07 20:11:08,054 INFO  [FtpLoggingFilter] SENT: 530 Authentication failed.
+
+2018-02-07 20:11:08,054 INFO  [FtpLoggingFilter] RECEIVED: QUIT
+2018-02-07 20:11:08,057 INFO  [FtpLoggingFilter] SENT: 221 Goodbye.
+
+2018-02-07 20:11:08,058 INFO  [FtpLoggingFilter] CLOSED
+2018-02-07 20:11:08,060 INFO  [FtpLoggingFilter] CREATED
+2018-02-07 20:11:08,061 INFO  [FtpLoggingFilter] OPENED
+2018-02-07 20:11:08,064 INFO  [FtpLoggingFilter] SENT: 220 Service ready for new user.
+
+2018-02-07 20:11:08,065 INFO  [FtpLoggingFilter] RECEIVED: USER user
+2018-02-07 20:11:08,067 INFO  [FtpLoggingFilter] RECEIVED: PASS *****
+2018-02-07 20:11:08,068 INFO  [PASS] Login success - user
+2018-02-07 20:11:08,069 INFO  [FtpLoggingFilter] SENT: 331 User name okay, need password for user.
+
+2018-02-07 20:11:08,069 INFO  [FtpLoggingFilter] SENT: 230 User logged in, proceed.
+
+2018-02-07 20:11:08,069 INFO  [FtpLoggingFilter] RECEIVED: SYST
+2018-02-07 20:11:08,070 INFO  [FtpLoggingFilter] SENT: 215 UNIX Type: Apache FtpServer
+
+2018-02-07 20:11:08,070 INFO  [FtpLoggingFilter] RECEIVED: PWD
+2018-02-07 20:11:08,071 INFO  [FtpLoggingFilter] SENT: 257 "/" is current directory.
+
+2018-02-07 20:11:08,072 INFO  [FtpLoggingFilter] RECEIVED: TYPE I
+2018-02-07 20:11:08,073 INFO  [FtpLoggingFilter] SENT: 200 Command TYPE okay.
+
+2018-02-07 20:11:08,073 INFO  [FtpLoggingFilter] RECEIVED: SIZE /
+2018-02-07 20:11:08,074 INFO  [FtpLoggingFilter] SENT: 550 /: Not a plain file.
+
+2018-02-07 20:11:08,075 INFO  [FtpLoggingFilter] RECEIVED: CWD /
+2018-02-07 20:11:08,076 INFO  [FtpLoggingFilter] SENT: 250 Directory changed to /
+
+2018-02-07 20:11:08,076 INFO  [FtpLoggingFilter] RECEIVED: EPSV
+2018-02-07 20:11:08,079 INFO  [FtpLoggingFilter] SENT: 229 Entering Passive Mode (|||56900|)
+
+2018-02-07 20:11:08,081 INFO  [FtpLoggingFilter] RECEIVED: LIST -l
+2018-02-07 20:11:08,086 WARN  [PassivePorts] Releasing unreserved passive port: 56900
+2018-02-07 20:11:08,086 INFO  [FtpLoggingFilter] SENT: 150 File status okay; about to open data connection.
+
+2018-02-07 20:11:08,087 INFO  [FtpLoggingFilter] SENT: 226 Closing data connection.
+
+2018-02-07 20:11:08,088 INFO  [FtpLoggingFilter] CLOSED

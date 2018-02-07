@@ -29,7 +29,7 @@ public class Helpers {
         System.out.println(ipAdr.get(2));
     }
 
-    @And("^Set timeout ?(\\d+) milliseconds$")
+    @And("^Set timeout \"?(\\d+)\" milliseconds$")
     public void timeout (int time) throws InterruptedException {
         Thread.sleep(time);
     }

@@ -41,7 +41,7 @@ public class SoapClExp  {
     }
 
 
-    @Given("^Soap client with endpointURI: (.*) username: (.*) and password (.*)$")
+    @Given("^Soap client with endpointURI: \"(.*)\" username: \"(.*)\" and password \"(.*)\"$")
     public void soapInstance(String endpUri, String username, String password) throws XmlException, IOException, SoapUIException {
         WsdlProject project = new WsdlProject();
         b.proxyUsername = username + ":";
@@ -72,17 +72,17 @@ public class SoapClExp  {
         b.modifier = new XModifier(b.domdoc);
     }
 
-    @Then("^set namespace: (.+) to value: (.+)$")
+    @Then("^set namespace: \"(.+)\" to value: \"(.+)\"$")
     public void setNamespace(String namespace, String value) {
         b.modifier.setNamespace(namespace, value);
     }
 
-    @And("^set SOAP header: (.+) to value: (.+)$")
+    @And("^set SOAP header: \"(.+)\" to value: \"(.+)\"$")
     public void setHeaderToValue(String header, String value) {
         b.modifier.setNamespace(header, value);
     }
 
-    @And("^set XML body via any xpath: //(.+) to value: (.+)$")
+    @And("^set XML body via any xpath: \"//(.+)\" to value: \"(.+)\"$")
     public void setXmlBodyViaAnyXpath(String xpath, String value) throws InterruptedException {
         if (value.equals("timestamp")) {
             long ts = System.currentTimeMillis() / 1000L;

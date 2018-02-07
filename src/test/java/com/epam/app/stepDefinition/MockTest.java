@@ -17,7 +17,7 @@ import java.net.ServerSocket;
  */
 public class MockTest {
 
-        @And("^setup ftp mock server set port: (\\d+) username: (.*) password: (.*) homeDir: (.*)$")
+        @And("^setup ftp mock server set port: \"(\\d+)\" username: \"(.*)\" password: \"(.*)\" homeDir: \"(.*)\"$")
         public void mock(int port, String userName, String password, String homeDir) throws FtpException, IOException, InterruptedException {
             PropertiesUserManagerFactory userManagerFactory = new PropertiesUserManagerFactory();
             UserManager userManager = userManagerFactory.createUserManager();

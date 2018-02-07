@@ -28,30 +28,30 @@ public class Test_MainPage {
 
     private String webpage;
 
-    @Given("^browser: (.+)$")
+    @Given("^browser: \"(.+)\"$")
     public static void setupClass(String browser) {
         System.setProperty("chromedriver.exe", "/src/test/resources");
         System.setProperty("selenide.browser", browser);
     }
 
-    @When("^open webpage: (.+)$")
+    @When("^open webpage: \"(.+)\"$")
     public void openMainPage(String webpage) throws InterruptedException {
         clearBrowserCache();
         open(webpage);
         b.webpage = webpage;
     }
 
-    @Then("^search for: (.+)$")
+    @Then("^search for: \"(.+)\"$")
     public void searchFor(String word) {
         $(By.name("q")).setValue(word).pressEnter();
     }
 
-    @Then("^click on (\\d+) -rd link$")
+    @Then("^click on \"(\\d+)\" -rd link$")
     public void clickOn(int num) {
         $(By.xpath("//*[@id='rso']//div/div[" + num + "]//h3/a")).followLink();
     }
 
-    @And("^wait: (\\d+) milliseconds$")
+    @And("^wait: \"(\\d+)\" milliseconds$")
     public void wait(int per) throws InterruptedException {
         Thread.sleep(per);
     }

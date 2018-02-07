@@ -1,5 +1,7 @@
 package com.epam.app.stepDefinition;
 
+import com.epam.app.PageObjects.GoogleResultsPage;
+import com.epam.app.PageObjects.GoogleSearchPage;
 import com.epam.app.share.SClShare;
 import cucumber.api.java.en.And;
 import org.openqa.selenium.By;
@@ -11,7 +13,9 @@ import javax.xml.soap.SOAPPart;
 import javax.xml.transform.stream.StreamSource;
 import java.io.ByteArrayInputStream;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class Asserts {
@@ -22,17 +26,17 @@ public class Asserts {
         this.b = b;
     }
 
-    @And("^I want to assert that the text contains (.+) in response$")
+    @And("^I want to assert that the text contains \"(.+)\" in response$")
     public void iWantToAssertThatResponseIs(String respStatus) {
         assertThat(b.soapResponse).contains(respStatus);
     }
 
-    @And("^I want to assert that response statusCode is ?(\\d+)$")
+    @And("^I want to assert that response statusCode is \"?(\\d+)\"$")
     public void iWantToAssertResponseStatusCode(int code) {
         assertThat(b.statusCode).isEqualTo(code);
     }
 
-    @And("^I want to assert that response is (.+)$")
+    @And("^I want to assert that response is \"(.+)\"$")
     public String updateSOAPMessage(String s) throws Exception {
         MessageFactory msgFactory = MessageFactory.newInstance();
         SOAPMessage message = msgFactory.createMessage();
@@ -49,11 +53,17 @@ public class Asserts {
         return s;
     }
 
-    @And("^assert that result page contains text: (.*)$")
+    @And("^assert that result page contains text: \"(.*)\"$")
     public void resultPage(String resQuery) {
         assertThat($(By.linkText(resQuery)));
     }
 
-
+    @And("^assert that request element contains text: \"(.*)\"$")
+    public void resultCorrect(String elementText) {
+        GoogleSearchPage searchPage = open(b.webpage, GoogleSearchPage.class);
+        GoogleResultsPage resultsPage = searchPage.search("selenide");
+        //resultsPage.results().shouldHave(size(10));
+        resultsPage.results().get(0).shouldHave(text(elementText));
+    }
 }
 
