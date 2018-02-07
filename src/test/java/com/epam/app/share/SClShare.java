@@ -1,5 +1,8 @@
 package com.epam.app.share;
 
+import com.epam.app.PageObjects.GoogleResultsPage;
+import com.eviware.soapui.impl.wsdl.WsdlInterface;
+import com.eviware.soapui.impl.wsdl.WsdlProject;
 import org.shai.xmodifier.XModifier;
 import org.w3c.dom.Document;
 
@@ -19,4 +22,12 @@ public class SClShare {
     public String path = null;
     public String wsdlPath = null;
     public String soapResponse = null;
+    public String webpage;
+    public GoogleResultsPage resultsPage;
+    public String proxyUsername;
+    public String proxyPassword;
+    public String username;
+    public WsdlProject project;
+    public String endpUri;
+    public WsdlInterface iface;
 }

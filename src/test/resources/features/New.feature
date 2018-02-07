@@ -3,7 +3,7 @@ Feature:
   As a user, i want to ...
 
   @Ui-Tests
-  Scenario: i've got new methods to test
+  Scenario: i want to test my new methods
 
 
     Given Soap client with endpointURI: <string> username: <string> and password <string>
@@ -19,3 +19,4 @@ Feature:
     And setup ftp mock server set port: 2221 username: user password: password homeDir: src/test/resources/test_data/
     And Set timeout 10000 milliseconds
     And get host IP address
+

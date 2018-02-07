@@ -2,6 +2,8 @@ package com.epam.app.stepDefinition;
 
 import com.epam.app.share.SClShare;
 import cucumber.api.java.en.And;
+import org.openqa.selenium.By;
+
 import javax.xml.soap.MessageFactory;
 import javax.xml.soap.SOAPException;
 import javax.xml.soap.SOAPMessage;
@@ -9,6 +11,7 @@ import javax.xml.soap.SOAPPart;
 import javax.xml.transform.stream.StreamSource;
 import java.io.ByteArrayInputStream;
 
+import static com.codeborne.selenide.Selenide.$;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class Asserts {
@@ -44,6 +47,11 @@ public class Asserts {
         } catch (SOAPException e) {
         }
         return s;
+    }
+
+    @And("^assert that result page contains text: (.*)$")
+    public void resultPage(String resQuery) {
+        assertThat($(By.linkText(resQuery)));
     }
 }
 

@@ -1,6 +1,7 @@
 
 package com.epam.app.stepDefinition;
 
+import com.epam.app.share.SClShare;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -19,6 +20,13 @@ import static com.codeborne.selenide.WebDriverRunner.clearBrowserCache;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class Test_MainPage {
+    private SClShare b;
+
+    public Test_MainPage(SClShare b) {
+        this.b = b;
+    }
+
+    private String webpage;
 
     @Given("^browser: (.+)$")
     public static void setupClass(String browser) {
@@ -26,11 +34,11 @@ public class Test_MainPage {
         System.setProperty("selenide.browser", browser);
     }
 
-
     @When("^open webpage: (.+)$")
     public void openMainPage(String webpage) throws InterruptedException {
         clearBrowserCache();
         open(webpage);
+        b.webpage = webpage;
     }
 
     @Then("^search for: (.+)$")
