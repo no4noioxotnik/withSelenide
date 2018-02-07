@@ -9,6 +9,6 @@ import static com.codeborne.selenide.Selenide.$$;
  */
 public class GoogleResultsPage {
     public ElementsCollection results() {
-        return $$("#ires li.g");
+        return $$("#ires");
     }
 }

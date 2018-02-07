@@ -53,5 +53,7 @@ public class Asserts {
     public void resultPage(String resQuery) {
         assertThat($(By.linkText(resQuery)));
     }
+
+
 }
 

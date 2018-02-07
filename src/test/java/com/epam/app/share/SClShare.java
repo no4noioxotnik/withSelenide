@@ -11,16 +11,8 @@ public class SClShare {
 
     public int statusCode = 0;
     public Document domdoc;
-    public Document domresp;
     public XModifier modifier;
-    public String login = null;
-    public String destination = null;
     public String password = null;
-    public String port1 = null;
-    public String host = null;
-    public String requestFinalGenerated = null;
-    public String path = null;
-    public String wsdlPath = null;
     public String soapResponse = null;
     public String webpage;
     public GoogleResultsPage resultsPage;
