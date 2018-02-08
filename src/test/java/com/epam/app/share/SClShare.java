@@ -6,6 +6,8 @@ import com.eviware.soapui.impl.wsdl.WsdlProject;
 import org.shai.xmodifier.XModifier;
 import org.w3c.dom.Document;
 
+import java.io.File;
+
 public class SClShare {
     public byte[] body = null;
 
@@ -22,4 +24,6 @@ public class SClShare {
     public WsdlProject project;
     public String endpUri;
     public WsdlInterface iface;
+    public File file;
+    public String path;
 }

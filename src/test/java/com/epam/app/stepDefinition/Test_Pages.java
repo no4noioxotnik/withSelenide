@@ -16,7 +16,7 @@ public class Test_Pages {
     }
     private GoogleResultsPage resultsPage;
 
-    @When("^go to page: (.*)$")
+    @When("^go to endpoint: \"(.*)\"$")
             public void search(String query) {
         GoogleSearchPage searchPage = open(b.webpage + query, GoogleSearchPage.class);
         GoogleResultsPage resultsPage = searchPage.search(query);

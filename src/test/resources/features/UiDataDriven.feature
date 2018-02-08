@@ -6,8 +6,8 @@ Feature:
   Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with
   data by xpath, then send this request to upload document to ftp, check response
      # Test 1-1:
-    Given browser: Chrome
-    When open webpage: https://www.hackthissite.org/info/about
+    Given browser: "Chrome"
+    When open webpage: "https://www.hackthissite.org/info/about"
     Then user enters Credentials to LogIn
       | Username   | Password |
       | testuser_1 | Test@153 |
