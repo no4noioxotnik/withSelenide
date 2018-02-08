@@ -3,6 +3,7 @@ package com.epam.app.share;
 import com.epam.app.PageObjects.GoogleResultsPage;
 import com.eviware.soapui.impl.wsdl.WsdlInterface;
 import com.eviware.soapui.impl.wsdl.WsdlProject;
+import net.schmizz.sshj.connection.channel.direct.Session;
 import org.shai.xmodifier.XModifier;
 import org.w3c.dom.Document;
 
@@ -26,4 +27,5 @@ public class SClShare {
     public WsdlInterface iface;
     public File file;
     public String path;
+    public Session session;
 }

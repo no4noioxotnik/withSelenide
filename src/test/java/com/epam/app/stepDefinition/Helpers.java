@@ -90,7 +90,7 @@ public class Helpers {
     }
 
     public void create (String filepath, Long filesize, String filename) throws Exception {
-//        length = 0x8FFFFFF;
+//      length = 0x8FFFFFF;
         MappedByteBuffer out = new RandomAccessFile(filepath + filename, "rw")
                 .getChannel().map(FileChannel.MapMode.READ_WRITE, 0, filesize);
         for (int i = 0; i < filesize; i++)
@@ -109,7 +109,7 @@ public class Helpers {
 
     public boolean compare2Files(String actualFilePath, String expectedFilePath) {
         if ((md5EncoderUtil.encodeToMd5(actualFilePath)).equals(md5EncoderUtil.encodeToMd5(expectedFilePath))) {
-            System.out.println("The files- "+actualFilePath+" and "+expectedFilePath+" are same");
+        System.out.println("The files- "+actualFilePath+" and "+expectedFilePath+" are same");
             return true;
         } else {
             System.out.println("The files- "+actualFilePath+" and "+expectedFilePath+" are NOT same");
@@ -119,19 +119,24 @@ public class Helpers {
 
     @And("^i want to connect via ssh to host \"(.*)\" port \"?(\\d+)\" with username \"(.*)\" and password \"(.*)\"$")
     public void sshConnect(String host, int port, String username, String password) throws IOException {
-        final SSHClient sshClient = new SSHClient();
-            sshClient.addHostKeyVerifier(new PromiscuousVerifier());
-//            KeyProvider keys = sshClient.loadKeys("path_to_private_key.ppk");
+         final SSHClient sshClient = new SSHClient();
+         sshClient.addHostKeyVerifier(new PromiscuousVerifier());
+//          KeyProvider keys = sshClient.loadKeys("path_to_private_key.ppk");
 //          sshClient.addHostKeyVerifier("ca:0b:b3:7f:53:5a:e3:bc:bf:44:63:d8:2d:26:c0:41");
-            sshClient.connect(host, port);
-            sshClient.authPassword(username, password);
-            Session session = sshClient.startSession();
-            session.allocateDefaultPTY();
-            Session.Shell shell = session.startShell();
-            //NEXT IN DEBUG
-        final Session.Command cmd = session.exec("ping -c 1 google.com");
-        System.out.println(IOUtils.readFully(cmd.getInputStream()).toString());
-        cmd.join(5, TimeUnit.SECONDS);
-        System.out.println("\n** exit status: " + cmd.getExitStatus());
+         sshClient.connect(host, port);
+         sshClient.authPassword(username, password);
+         Session session = sshClient.startSession();
+         session.allocateDefaultPTY();
+         Session.Shell shell = session.startShell();
+         b.session = session;
+    }
+
+    @And("^execute ssh commands$")
+    public void sshCommands() throws IOException {
+    //IN DEBUG
+         final Session.Command cmd = b.session.exec("ping -c 1 google.com");
+         System.out.println(IOUtils.readFully(cmd.getInputStream()).toString());
+         cmd.join(5, TimeUnit.SECONDS);
+         System.out.println("\n** exit status: " + cmd.getExitStatus());
     }
 }
