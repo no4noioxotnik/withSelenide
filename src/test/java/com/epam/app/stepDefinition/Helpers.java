@@ -31,7 +31,7 @@ public class Helpers {
         this.b = b;
     }
 
-    @And("^get host IP address$")
+    @And("^get localhost IP address$")
     public void ip() throws SocketException,  PendingException {
         Enumeration e = NetworkInterface.getNetworkInterfaces();
         ArrayList<String> ipAdr = new ArrayList<String>();
@@ -93,5 +93,22 @@ public class Helpers {
         System.out.println("Finished writing");
         for (long i = filesize / 2; i < filesize / 2 + 6; i++)
             System.out.print((char) out.get((int) i));
+    }
+
+    @And("^compare file with pathname \"(.*)\" to file \"(.*)\"$")
+    public void compareTwoFiles(String actualFilePath, String expectedFilePath) throws IOException {
+        compare2Files(actualFilePath, expectedFilePath);
+    }
+
+    MD5EncoderUtility md5EncoderUtil = new MD5EncoderUtility();
+
+    public boolean compare2Files(String actualFilePath, String expectedFilePath) {
+        if ((md5EncoderUtil.encodeToMd5(actualFilePath)).equals(md5EncoderUtil.encodeToMd5(expectedFilePath))) {
+            System.out.println("The files- "+actualFilePath+" and "+expectedFilePath+" are same");
+            return true;
+        } else {
+            System.out.println("The files- "+actualFilePath+" and "+expectedFilePath+" are NOT same");
+            return false;
+        }
     }
 }
