@@ -1,6 +1,8 @@
 
 package com.epam.app.stepDefinition;
 
+import com.epam.app.PageObjects.GoogleResultsPage;
+import com.epam.app.PageObjects.GoogleSearchPage;
 import com.epam.app.share.SClShare;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
@@ -96,5 +98,12 @@ public class Test_MainPage {
         } catch (NoSuchElementException e) {
             System.out.println($(By.xpath("/html/body/table/tbody/tr[2]/td/table/tbody/tr/td[2]/div/a")).getText());
         }
+    }
+
+    @When("^go to endpoint: \"(.*)\"$")
+    public void search(String query) {
+        GoogleSearchPage searchPage = open(b.webpage + query, GoogleSearchPage.class);
+        GoogleResultsPage resultsPage = searchPage.search(query);
+        b.resultsPage = resultsPage;
     }
 }

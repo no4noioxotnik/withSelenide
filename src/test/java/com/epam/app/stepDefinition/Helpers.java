@@ -6,6 +6,10 @@ import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
+import net.schmizz.sshj.SSHClient;
+import net.schmizz.sshj.common.IOUtils;
+import net.schmizz.sshj.connection.channel.direct.Session;
+import net.schmizz.sshj.transport.verification.PromiscuousVerifier;
 import org.apache.commons.io.FileUtils;
 import org.xml.sax.SAXException;
 
@@ -22,6 +26,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.concurrent.TimeUnit;
 
 
 public class Helpers {
@@ -110,5 +115,23 @@ public class Helpers {
             System.out.println("The files- "+actualFilePath+" and "+expectedFilePath+" are NOT same");
             return false;
         }
+    }
+
+    @And("^i want to connect via ssh to host \"(.*)\" port \"?(\\d+)\" with username \"(.*)\" and password \"(.*)\"$")
+    public void sshConnect(String host, int port, String username, String password) throws IOException {
+        final SSHClient sshClient = new SSHClient();
+            sshClient.addHostKeyVerifier(new PromiscuousVerifier());
+//            KeyProvider keys = sshClient.loadKeys("path_to_private_key.ppk");
+//          sshClient.addHostKeyVerifier("ca:0b:b3:7f:53:5a:e3:bc:bf:44:63:d8:2d:26:c0:41");
+            sshClient.connect(host, port);
+            sshClient.authPassword(username, password);
+            Session session = sshClient.startSession();
+            session.allocateDefaultPTY();
+            Session.Shell shell = session.startShell();
+            //NEXT IN DEBUG
+        final Session.Command cmd = session.exec("ping -c 1 google.com");
+        System.out.println(IOUtils.readFully(cmd.getInputStream()).toString());
+        cmd.join(5, TimeUnit.SECONDS);
+        System.out.println("\n** exit status: " + cmd.getExitStatus());
     }
 }
