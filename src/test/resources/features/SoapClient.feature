@@ -17,6 +17,12 @@ Feature:
 #    And I want to assert that response is "correct"
 #    And setup ftp mock server set port: "<number>" username: "<string>" password: "<string>" homeDir: "<string>"
 #    And Set timeout "<number>" milliseconds
-#    And get host IP address
+#    And stop ftp mock server
+#    And get localhost IP address
+#    And i want to connect via ssh to host "<string>" port "<number>" with username "<string>" and password "<string>"
+#    And execute via ssh a command "<string>"
 
+
+    And set mysql database url jdbc:"mysql://localhost:3306/simple" with user "root" and password "root"
+    And send query "SELECT * FROM" from column name "CUST" end of query "<string>" to database
 

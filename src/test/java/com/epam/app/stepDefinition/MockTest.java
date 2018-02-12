@@ -1,5 +1,6 @@
 package com.epam.app.stepDefinition;
 
+import com.epam.app.share.SClShare;
 import cucumber.api.java.en.And;
 import org.apache.ftpserver.FtpServer;
 import org.apache.ftpserver.FtpServerFactory;
@@ -16,6 +17,11 @@ import java.net.ServerSocket;
  * Created by Rustam_Ragimov on 2/6/2018.
  */
 public class MockTest {
+    private SClShare b;
+
+    public MockTest(SClShare b) {
+        this.b = b;
+    }
 
         @And("^setup ftp mock server set port: \"(\\d+)\" username: \"(.*)\" password: \"(.*)\" homeDir: \"(.*)\"$")
         public void mock(int port, String userName, String password, String homeDir) throws FtpException, IOException, InterruptedException {
@@ -37,6 +43,7 @@ public class MockTest {
             FtpServer server = factory.createServer();
             server.start();
             Thread.sleep(50000);
+            b.server = server;
         }
 
         private ServerSocket serverSocket;
@@ -49,11 +56,9 @@ public class MockTest {
             //serverSocket.setSoTimeout(10000);
         }
 
-        public void newThread(){
-            if (thread == null)
-            {  thread = new Thread(String.valueOf(this));
-                thread.start();
-            }
-        }
+       @And("stop ftp mock server")
+        public void stopFtpMock() {
+            b.server.stop();
+       }
 }
 

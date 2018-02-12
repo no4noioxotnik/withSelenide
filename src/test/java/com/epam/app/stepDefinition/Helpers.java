@@ -24,6 +24,7 @@ import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.concurrent.TimeUnit;
@@ -59,7 +60,7 @@ public class Helpers {
         Thread.sleep(time);
     }
 
-    @And("^get file from url \"(.*)\" in bytes$")
+    @And("^get file from url \"(.*)\" in bytes and save it$")
     public void getFileFromUrl(String url) throws UnirestException {
             HttpResponse<String> response = Unirest.get(url)//    .basicAuth(b.login, b.password)
             .asString();
@@ -121,8 +122,8 @@ public class Helpers {
     public void sshConnect(String host, int port, String username, String password) throws IOException {
          final SSHClient sshClient = new SSHClient();
          sshClient.addHostKeyVerifier(new PromiscuousVerifier());
-//          KeyProvider keys = sshClient.loadKeys("path_to_private_key.ppk");
-//          sshClient.addHostKeyVerifier("ca:0b:b3:7f:53:5a:e3:bc:bf:44:63:d8:2d:26:c0:41");
+//         KeyProvider keys = sshClient.loadKeys("path_to_private_key.ppk");
+//         sshClient.addHostKeyVerifier("ca:0b:b3:7f:53:5a:e3:bc:bf:44:63:d8:2d:26:c0:41");
          sshClient.connect(host, port);
          sshClient.authPassword(username, password);
          Session session = sshClient.startSession();
@@ -131,12 +132,43 @@ public class Helpers {
          b.session = session;
     }
 
-    @And("^execute ssh commands$")
-    public void sshCommands() throws IOException {
+    @And("^execute via ssh a command \"(.*)\"$")
+    public void sshCommands(String command) throws IOException {
     //IN DEBUG
-         final Session.Command cmd = b.session.exec("ping -c 1 google.com");
+         final Session.Command cmd = b.session.exec(command);
          System.out.println(IOUtils.readFully(cmd.getInputStream()).toString());
          cmd.join(5, TimeUnit.SECONDS);
          System.out.println("\n** exit status: " + cmd.getExitStatus());
     }
-}
+
+    @And("^set mysql database url jdbc:\"(.*)\" with user \"(.*)\" and password \"(.*)\"$")
+    public void jdbcUrlUserPassword(String url, String user, String password) {
+        b.jdbcUrl = url;
+        b.jdbcUser = user;
+        b.jdbcPassword = password;
+    }
+
+    @And("^send query \"(.*)\" from column name \"(.*)\" end of query \"(.*)\" to database$")
+    public void sqlRequest(String request, String columnName, String endQuery) throws ClassNotFoundException, SQLException {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection("jdbc:" + b.jdbcUrl,
+                    b.jdbcUser, b.jdbcPassword);
+            Statement stmt = con.createStatement();
+            String query = request + columnName + endQuery;
+            ResultSet rs = stmt.executeQuery(query);
+            while (rs.next()) {
+                System.out.print(rs.getString(columnName) + " ");
+                System.out.print(rs.getString(2) + " ");
+                System.out.print(rs.getString(3) + " ");
+            }
+            rs.close();
+            stmt.close();
+            con.close();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    }
