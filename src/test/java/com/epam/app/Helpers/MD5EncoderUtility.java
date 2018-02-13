@@ -1,8 +1,11 @@
-package com.epam.app.stepDefinition;
+package com.epam.app.Helpers;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.math.BigInteger;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -44,4 +47,25 @@ public class MD5EncoderUtility {
         System.out.println("Digest(in hex format):: " + sb.toString());
         return sb.toString();
     }
+
+    private static final String TEST_DATA_FOLDER_NAME = "src/test/resources/test_data/";//src/test/resources/test_data/
+
+
+    public static byte[] getFileBytesFromTestData(String name) throws IOException {
+        return Files.readAllBytes(Paths.get(TEST_DATA_FOLDER_NAME + name));
+    }
+
+    public static String getMD5(byte[] input) {
+        try {
+            byte[] messageDigest = MessageDigest.getInstance("MD5").digest(input);
+            String hashtext = new BigInteger(1, messageDigest).toString(16);
+            while (hashtext.length() < 32)
+                hashtext = "0" + hashtext;
+            return hashtext;
+        }
+        catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 }

@@ -1,7 +1,6 @@
 package com.epam.app.stepDefinition;
 
 import com.epam.app.PageObjects.GoogleResultsPage;
-import com.epam.app.PageObjects.GoogleSearchPage;
 import com.epam.app.share.SClShare;
 import cucumber.api.java.en.And;
 import org.openqa.selenium.By;
@@ -15,7 +14,6 @@ import java.io.ByteArrayInputStream;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class Asserts {
@@ -60,10 +58,23 @@ public class Asserts {
 
     @And("^assert that request element contains text: \"(.*)\"$")
     public void resultCorrect(String elementText) {
-        GoogleSearchPage searchPage = open(b.webpage, GoogleSearchPage.class);
-        GoogleResultsPage resultsPage = searchPage.search("selenide");
-        //resultsPage.results().shouldHave(size(10));
-        resultsPage.results().get(0).shouldHave(text(elementText));
+        GoogleResultsPage.results().get(0).shouldHave(text(elementText));
+    }
+
+    @And("^assert that login error occured$")
+    public void loginError() {
+        $(By.xpath("/html/body/table/tbody/tr[2]/td/table/tbody/tr/td[2]/div/a")).exists();
+    }
+
+    public static void assertContainsOrEquals(String matchType, String v, String key) {
+        switch (matchType) {
+            case "equals":
+                assertThat(key).isEqualTo(v);
+                break;
+            case "contains":
+                assertThat(key).contains(v);
+                break;
+        }
     }
 }
 

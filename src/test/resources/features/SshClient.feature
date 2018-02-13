@@ -6,3 +6,4 @@ Feature:
   Scenario: i want to test my new methods
 
     Given i want to connect via ssh to host "<string>" port "<number>" with username "<string>" and password "<string>"
+#    And execute via ssh a command "ping -c 1 google.com"

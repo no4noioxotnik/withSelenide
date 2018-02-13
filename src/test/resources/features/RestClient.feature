@@ -2,9 +2,21 @@
 Feature:
   As a user, i want to ...
 
-  @Ui-Tests
-  Scenario: i want to test my new methods
+  @Rest-Tests
+  Scenario: send request, check response,
 
-#  Given create sparse file to path "src/test/resources/test_data/" with size "2565" and filename "testoo.txt"
-  Given compare file with pathname "src/test/resources/test_data/testo.txt" to file "src/test/resources/test_data/testoo.txt"
+    Given REST client with method: <string> and url: http|https://<string>:<number>/<string>
+    And set url path: <string> and save it as url_<string>
+    And set header: <string>: <string>
+    And set body as file: /test_data/<string>
+    And save MD5 hashsum of the request body
+    When sending request with defined client and expect "string|json|binary"
+    Then assert that response code is "<number>"
+    And assert that response header "<string>" equals|contains "<string>"
+
+
+
+
+
+
 

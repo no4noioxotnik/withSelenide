@@ -18,7 +18,6 @@ import java.util.Map;
 import java.util.Set;
 
 import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.WebDriverRunner.clearBrowserCache;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class Test_MainPage {
@@ -38,19 +37,18 @@ public class Test_MainPage {
 
     @When("^open webpage: \"(.+)\"$")
     public void openMainPage(String webpage) throws InterruptedException {
-        clearBrowserCache();
         open(webpage);
         b.webpage = webpage;
     }
 
     @Then("^search for: \"(.+)\"$")
     public void searchFor(String word) {
-        $(By.name("q")).setValue(word).pressEnter();
+        GoogleSearchPage.search(word);
     }
 
     @Then("^click on \"(\\d+)\" -rd link$")
     public void clickOn(int num) {
-        $(By.xpath("//*[@id='rso']//div/div[" + num + "]//h3/a")).followLink();
+        GoogleResultsPage.selectSearchResultNumber(num);
     }
 
     @And("^wait: \"(\\d+)\" milliseconds$")
@@ -60,20 +58,20 @@ public class Test_MainPage {
 
     @And("^set login as: \"(.*)\" and password as: \"(.*)\"$")
     public void setLoginPassword(String login, String password) {
-        $(By.name("username")).pressEnter();
+        $(By.id("loginclick")).click();
         $(By.name("username")).setValue(login);
         $(By.name("password")).setValue(password);
-        $(By.xpath("/html/body/table/tbody//tbody/tr[4]/td/input")).followLink();
+        $(By.xpath("/html/body/table/tbody//tbody/tr[4]/td/input")).click();
     }
 
     @When("^user enters Credentials to LogIn$")
     public void user_enters_testuser_and_Test(DataTable usercredentials) throws Throwable {
 
         for (Map<String,String> data : usercredentials.asMaps(String.class,String.class)) {
-            $(By.name("username")).pressEnter();
+            $(By.id("loginclick")).click();
             $(By.name("username")).setValue(data.get("Username"));
             $(By.name("password")).setValue(data.get("Password"));
-            $(By.xpath("/html/body/table/tbody//tbody/tr[4]/td/input")).followLink();
+            $(By.xpath("/html/body/table/tbody//tbody/tr[4]/td/input")).click();
         }
     }
 
@@ -86,11 +84,6 @@ public class Test_MainPage {
         switchTo().window(tabs.get(0));
     }
 
-    @And("^assert that login error occured$")
-    public void loginError() {
-        $(By.xpath("/html/body/table/tbody/tr[2]/td/table/tbody/tr/td[2]/div/a")).exists();
-    }
-
     @And("^choose to register from inside of error message$")
     public void erroRegister() {
         try {
@@ -101,9 +94,7 @@ public class Test_MainPage {
     }
 
     @When("^go to endpoint: \"(.*)\"$")
-    public void search(String query) {
-        GoogleSearchPage searchPage = open(b.webpage + query, GoogleSearchPage.class);
-        GoogleResultsPage resultsPage = searchPage.search(query);
-        b.resultsPage = resultsPage;
+    public void goToEnpoint(String endpoint) {
+        open(b.webpage + endpoint);
     }
 }

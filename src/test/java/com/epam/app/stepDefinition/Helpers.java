@@ -1,5 +1,6 @@
 package com.epam.app.stepDefinition;
 
+import com.epam.app.Helpers.MD5EncoderUtility;
 import com.epam.app.share.SClShare;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
@@ -91,7 +92,6 @@ public class Helpers {
     }
 
     public void create (String filepath, Long filesize, String filename) throws Exception {
-//      length = 0x8FFFFFF;
         MappedByteBuffer out = new RandomAccessFile(filepath + filename, "rw")
                 .getChannel().map(FileChannel.MapMode.READ_WRITE, 0, filesize);
         for (int i = 0; i < filesize; i++)
