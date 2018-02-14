@@ -13,3 +13,4 @@ Feature:
     And assert that request element contains text: "Selenide: лаконичные и стабильные UI тесты на Java"
     And click on "3" -rd link
     And wait: "5000" milliseconds
+    And close webpage

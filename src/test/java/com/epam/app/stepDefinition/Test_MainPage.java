@@ -1,6 +1,7 @@
 
 package com.epam.app.stepDefinition;
 
+import com.codeborne.selenide.WebDriverRunner;
 import com.epam.app.PageObjects.GoogleResultsPage;
 import com.epam.app.PageObjects.GoogleSearchPage;
 import com.epam.app.share.SClShare;
@@ -11,6 +12,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,6 +41,12 @@ public class Test_MainPage {
     public void openMainPage(String webpage) throws InterruptedException {
         open(webpage);
         b.webpage = webpage;
+    }
+
+    @And("^close webpage$")
+    public void closeWebPage() {
+        WebDriver driver = WebDriverRunner.getWebDriver();
+        driver.close();
     }
 
     @Then("^search for: \"(.+)\"$")
