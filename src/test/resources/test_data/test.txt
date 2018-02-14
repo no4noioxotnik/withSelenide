@@ -1,1 +1,1 @@
-dsfsdsd
+1c soap service returns "Ошибка обработки запроса."

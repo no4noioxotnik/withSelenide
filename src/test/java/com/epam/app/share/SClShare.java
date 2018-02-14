@@ -33,4 +33,5 @@ public class SClShare {
     public String jdbcUrl;
     public String jdbcUser;
     public String jdbcPassword;
+    public Session.Shell shell;
 }

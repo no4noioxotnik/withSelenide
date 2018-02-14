@@ -70,7 +70,7 @@ public class Helpers {
 
     @And("^create file with filename \"(.*)\" to path \"(.*)\"$")
     public void createNewFile(File file, String path) throws IOException, UnirestException, ParserConfigurationException, SAXException {
-        FileUtils.touch(new File(path + file));//"src/test/resources/test_data/parameters.wsdl"
+        FileUtils.touch(new File(path + file));//"src/test/resources/test_data/text.doc"
         b.path = path;
         b.file = file;
     }
@@ -82,7 +82,7 @@ public class Helpers {
 
     @And("^delete file \"(.+)\" from path \"(.*)\"$")
     public void deleteLocalFile(File file, String path) throws IOException {
-        file = new File(path + file);//"src/test/resources/test_data/parameters.wsdl"
+        file = new File(path + file);//"src/test/resources/test_data/text.doc"
         FileUtils.forceDelete(file);//or .deleteDirectory(file);
     }
 
@@ -130,6 +130,7 @@ public class Helpers {
         session.allocateDefaultPTY();
         Session.Shell shell = session.startShell();
         b.session = session;
+        b.shell = shell;
     }
 
     @And("^execute via ssh a command \"(.*)\"$")

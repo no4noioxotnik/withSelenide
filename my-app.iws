@@ -25,9 +25,12 @@
     <list default="true" id="1d6b4635-5e93-43a9-8295-38a5395c04df" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app.iws" afterPath="$PROJECT_DIR$/my-app.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soapui.log" afterPath="$PROJECT_DIR$/soapui.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/Pages.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/Pages.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/share/SClShare.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/share/SClShare.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Helpers.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Helpers.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/RestClient.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/RestClient.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/SoapClient.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/SoapClient.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/test_data/test.txt" afterPath="$PROJECT_DIR$/src/test/resources/test_data/test.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/test_data/test.txt" afterPath="$PROJECT_DIR$/target/test-classes/test_data/test.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -205,21 +208,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SoapClient.feature" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SoapClient.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/SoapClient.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
+            <state relative-caret-position="283">
               <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestClient.feature" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RestClient.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/RestClient.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+            <state relative-caret-position="215">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -290,13 +293,10 @@
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/Helpers/ComparisonTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/PageObjects/GoogleResultsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/PageObjects/GoogleSearchPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/epam/app/share/SClShare.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/share/RClShare.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Asserts.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/test_data/test.txt" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/Helpers/MD5EncoderUtility.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/RestClExp.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Helpers.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/TestRunner/TestRunnerCopy.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/SoapClExp.java" />
@@ -308,8 +308,11 @@
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/TestRunner/Runner.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/Pages.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/SoapClient.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/test_data/test.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Helpers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/app/share/SClShare.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/RestClient.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/SoapClient.feature" />
       </list>
     </option>
   </component>
@@ -572,20 +575,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="withSelenide_" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -630,55 +619,7 @@
       <recent name="com.epam.app.stepDefinition" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
-    <configuration default="false" name="Feature: Pages" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/Pages.feature" />
-      <option name="GLUE" value="com.epam.app.stepDefinition" />
-      <option name="myNameFilter" value="" />
-      <option name="myGeneratedName" value="Feature: Pages" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="my-app" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Feature: RestClient" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/RestClient.feature" />
-      <option name="GLUE" value="com.epam.app.stepDefinition" />
-      <option name="myNameFilter" value="" />
-      <option name="myGeneratedName" value="Feature: RestClient" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="my-app" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Cucumber java.Scenario: I want to test Soap-Tests Scenario">
     <configuration default="false" name="Feature: SshClient" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -751,6 +692,54 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Scenario: I want to test Rest-Tests Scenario" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/RestClient.feature" />
+      <option name="GLUE" value="com.epam.app.stepDefinition" />
+      <option name="myNameFilter" value="^I want to test Rest\-Tests Scenario$" />
+      <option name="myGeneratedName" value="Scenario: I want to test Rest-Tests Scenario" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^I want to test Rest\-Tests Scenario$&quot;" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="my-app" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Scenario: I want to test Soap-Tests Scenario" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/resources/features/SoapClient.feature" />
+      <option name="GLUE" value="com.epam.app.stepDefinition" />
+      <option name="myNameFilter" value="^I want to test Soap\-Tests Scenario$" />
+      <option name="myGeneratedName" value="Scenario: I want to test Soap-Tests Scenario" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^I want to test Soap\-Tests Scenario$&quot;" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="my-app" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -1171,19 +1160,19 @@
       <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario:SoapClient.feature" />
       <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario:SshClient.feature" />
       <item index="5" class="java.lang.String" itemvalue="Cucumber java.Scenario:UiDataDriven.feature" />
-      <item index="6" class="java.lang.String" itemvalue="Cucumber java.Feature: Pages" />
-      <item index="7" class="java.lang.String" itemvalue="Cucumber java.Feature: RestClient" />
-      <item index="8" class="java.lang.String" itemvalue="Cucumber java.Feature: SshClient" />
-      <item index="9" class="java.lang.String" itemvalue="Cucumber java.Feature: UiDataDriven" />
-      <item index="10" class="java.lang.String" itemvalue="JUnit.Runner" />
+      <item index="6" class="java.lang.String" itemvalue="Cucumber java.Feature: SshClient" />
+      <item index="7" class="java.lang.String" itemvalue="Cucumber java.Feature: UiDataDriven" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.Runner" />
+      <item index="9" class="java.lang.String" itemvalue="Cucumber java.Scenario: I want to test Rest-Tests Scenario" />
+      <item index="10" class="java.lang.String" itemvalue="Cucumber java.Scenario: I want to test Soap-Tests Scenario" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Runner" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: UiDataDriven" />
-        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: SshClient" />
-        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Feature: RestClient" />
-        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: Pages" />
+        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: I want to test Soap-Tests Scenario" />
+        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: I want to test Rest-Tests Scenario" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Runner" />
+        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Feature: UiDataDriven" />
+        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: SshClient" />
       </list>
     </recent_temporary>
   </component>
@@ -1383,16 +1372,17 @@
       <option name="project" value="LOCAL" />
       <updated>1518619156858</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Bug fixes">
+      <created>1518622795027</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1518622795027</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__OutlineExample - 2018.02.14 at 18h 20m 58s.xml">
-      <configuration name="Feature: OutlineExample" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__OutlineExample - 2018.02.14 at 18h 24m 36s.xml">
-      <configuration name="Feature: OutlineExample" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Feature__Pages - 2018.02.14 at 18h 25m 01s.xml">
       <configuration name="Feature: Pages" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
@@ -1405,17 +1395,23 @@
     <history-entry file="Feature__UiDataDriven - 2018.02.14 at 18h 26m 38s.xml">
       <configuration name="Feature: UiDataDriven" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Runner - 2018.02.14 at 18h 18m 37s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Runner - 2018.02.14 at 18h 37m 06s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Scenario_UiDataDriven_feature - 2018.02.14 at 17h 07m 01s.xml">
-      <configuration name="Scenario:UiDataDriven.feature" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__I_want_to_test_Rest-Tests_Scenario - 2018.02.14 at 19h 13m 54s.xml">
+      <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="TestRunner - 2018.02.14 at 17h 07m 03s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
+    <history-entry file="Scenario__I_want_to_test_Rest-Tests_Scenario - 2018.02.14 at 19h 16m 22s.xml">
+      <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__I_want_to_test_Rest-Tests_Scenario - 2018.02.14 at 19h 41m 36s.xml">
+      <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__I_want_to_test_Soap-Tests_Scenario - 2018.02.14 at 19h 15m 20s.xml">
+      <configuration name="Scenario: I want to test Soap-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__I_want_to_test_Soap-Tests_Scenario - 2018.02.14 at 19h 42m 18s.xml">
+      <configuration name="Scenario: I want to test Soap-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="0">
@@ -1444,9 +1440,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.77231467" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2789916" sideWeight="0.88426626" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30588236" sideWeight="0.88426626" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6487395" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21785174" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1487,7 +1483,8 @@
     <MESSAGE value="ssh connection&#10;jdbc added" />
     <MESSAGE value="REST client added" />
     <MESSAGE value="Junit runner finally added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Junit runner finally added" />
+    <MESSAGE value="Bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>
@@ -1702,13 +1699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/share/SClShare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -1720,13 +1710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="50" column="32" lean-forward="false" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/test_data/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1746,40 +1729,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/SoapClExp - Copy.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/TestRunner/TestRunnerCopy.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/RestClExp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="93" column="42" lean-forward="false" selection-start-line="93" selection-start-column="42" selection-end-line="93" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1135#1136#0" expanded="false" />
-            <element signature="e#1161#1162#0" expanded="false" />
-            <element signature="e#2604#2605#0" expanded="false" />
-            <element signature="e#2659#2660#0" expanded="false" />
-            <element signature="e#2783#2784#0" expanded="false" />
-            <element signature="e#2816#2817#0" expanded="false" />
-            <element signature="e#3115#3116#0" expanded="false" />
-            <element signature="e#3179#3180#0" expanded="false" />
-            <element signature="e#3459#3460#0" expanded="false" />
-            <element signature="e#3534#3535#0" expanded="false" />
-            <element signature="e#6075#6076#0" expanded="false" />
-            <element signature="e#6145#6146#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-952">
           <caret line="73" column="19" lean-forward="false" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/SoapClExp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1792,14 +1745,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/TestRunner.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Helpers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Asserts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1855,7 +1800,7 @@
         <state relative-caret-position="187">
           <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1878,26 +1823,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Test_MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="48" column="23" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+        <state relative-caret-position="153">
+          <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/SoapClient.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/RestClExp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="235">
+          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/test_data/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="50" lean-forward="false" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/share/SClShare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Helpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="167" column="25" lean-forward="true" selection-start-line="167" selection-start-column="25" selection-end-line="167" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/SoapClExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/RestClient.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="2" lean-forward="false" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        <state relative-caret-position="215">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/SoapClient.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
