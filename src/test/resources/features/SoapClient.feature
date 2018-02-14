@@ -3,7 +3,7 @@ Feature:
   As a user, i want to ...
 
   @Soap-Tests
-  Scenario: i want to test my new methods
+  Scenario: I want to test Soap-Tests Scenario
 
 #    Given Soap client with endpointURI: "<string>" username: "<string>" and password "<string>"
 #    And Wsdl with url: https://<string>
@@ -27,3 +27,4 @@ Feature:
 
 #    And set mysql database url jdbc:"mysql://localhost:3306/simple" with user "root" and password "root"
 #    And send query "SELECT * FROM" from column name "CUST" end of query "<string>" to database
+

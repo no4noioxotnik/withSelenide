@@ -3,8 +3,7 @@ Feature:
   As a user, i want to ...
 
   @UiOutline
-  Scenario Outline: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with
-  data by xpath, then send this request to upload document to ftp, check response
+  Scenario Outline: I want to test UiOutline Scenario
      # Test 1-1:
     Given browser: "Chrome"
     When open webpage: "https://www.hackthissite.org/info/about"

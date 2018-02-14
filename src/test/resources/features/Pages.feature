@@ -2,8 +2,8 @@
 Feature:
   As a user, i want to ...
 
-  @UiOutline
-  Scenario: I want to introduce page objects with Selenide
+  @UiPages
+  Scenario:  I want to test UiPages Scenario
      # Test 1-1:
     Given browser: "Chrome"
     And open webpage: "https://www.google.com"

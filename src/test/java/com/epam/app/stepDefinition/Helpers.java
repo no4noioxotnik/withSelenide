@@ -63,9 +63,9 @@ public class Helpers {
 
     @And("^get file from url \"(.*)\" in bytes and save it$")
     public void getFileFromUrl(String url) throws UnirestException {
-            HttpResponse<String> response = Unirest.get(url)//    .basicAuth(b.login, b.password)
-            .asString();
-    b.body = response.getBody().getBytes();
+        HttpResponse<String> response = Unirest.get(url)//    .basicAuth(b.login, b.password)
+        .asString();
+        b.body = response.getBody().getBytes();
     }
 
     @And("^create file with filename \"(.*)\" to path \"(.*)\"$")
@@ -120,25 +120,26 @@ public class Helpers {
 
     @And("^i want to connect via ssh to host \"(.*)\" port \"?(\\d+)\" with username \"(.*)\" and password \"(.*)\"$")
     public void sshConnect(String host, int port, String username, String password) throws IOException {
-         final SSHClient sshClient = new SSHClient();
-         sshClient.addHostKeyVerifier(new PromiscuousVerifier());
+        final SSHClient sshClient = new SSHClient();
+        sshClient.addHostKeyVerifier(new PromiscuousVerifier());
 //         KeyProvider keys = sshClient.loadKeys("path_to_private_key.ppk");
 //         sshClient.addHostKeyVerifier("ca:0b:b3:7f:53:5a:e3:bc:bf:44:63:d8:2d:26:c0:41");
-         sshClient.connect(host, port);
-         sshClient.authPassword(username, password);
-         Session session = sshClient.startSession();
-         session.allocateDefaultPTY();
-         Session.Shell shell = session.startShell();
-         b.session = session;
+        sshClient.connect(host, port);
+        sshClient.authPassword(username, password);
+        Session session = sshClient.startSession();
+        session.allocateDefaultPTY();
+        Session.Shell shell = session.startShell();
+        b.session = session;
     }
 
     @And("^execute via ssh a command \"(.*)\"$")
     public void sshCommands(String command) throws IOException {
     //IN DEBUG
-         final Session.Command cmd = b.session.exec(command);
-         System.out.println(IOUtils.readFully(cmd.getInputStream()).toString());
-         cmd.join(5, TimeUnit.SECONDS);
-         System.out.println("\n** exit status: " + cmd.getExitStatus());
+        final Session.Command cmd = b.session.exec(command);
+        System.out.println(IOUtils.readFully(cmd.getInputStream()).toString());
+        cmd.join(5, TimeUnit.SECONDS);
+        System.out.println("\n** exit status: " + cmd.getExitStatus());
+        b.session.close();
     }
 
     @And("^set mysql database url jdbc:\"(.*)\" with user \"(.*)\" and password \"(.*)\"$")
@@ -171,4 +172,4 @@ public class Helpers {
             e.printStackTrace();
         }
     }
-    }
+}

@@ -3,8 +3,7 @@ Feature:
   As a user, i want to ...
 
   @Ui-Tests
-  Scenario: I have downloaded and parsed wsdl from url, then generate wsdl-based dummy xml file and fill it with
-  data by xpath, then send this request to upload document to ftp, check response
+  Scenario: I want to test Ui-Tests Scenario
      # Test 1-1:
     Given browser: "Chrome"
     When open webpage: "https://www.hackthissite.org/info/about"
