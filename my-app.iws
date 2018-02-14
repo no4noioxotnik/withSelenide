@@ -23,21 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d6b4635-5e93-43a9-8295-38a5395c04df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/TestRunner/Runner.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/TestRunner/TestRunner.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app.iml" afterPath="$PROJECT_DIR$/my-app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app.ipr" afterPath="$PROJECT_DIR$/my-app.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app.iws" afterPath="$PROJECT_DIR$/my-app.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soapui-errors.log" afterPath="$PROJECT_DIR$/soapui-errors.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soapui.log" afterPath="$PROJECT_DIR$/soapui.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Helpers.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Helpers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/OutlineExample.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/OutlineExample.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/Pages.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/Pages.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/RestClient.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/RestClient.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/SoapClient.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/SoapClient.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/SshClient.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/SshClient.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/features/UiDataDriven.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/UiDataDriven.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/test_data/test.txt" afterPath="$PROJECT_DIR$/target/test-classes/test_data/test.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/TestRunner/Runner.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/TestRunner/Runner.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -229,7 +217,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/RestClient.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="197">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -395,20 +383,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="withSelenide_" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="withSelenide_" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1289,7 +1263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518539589135</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Junit runner finally added">
+      <created>1518618846821</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1518618846821</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1297,6 +1278,9 @@
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Runner - 2018.02.14 at 17h 24m 08s.xml">
+      <configuration name="Runner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Runner - 2018.02.14 at 17h 38m 38s.xml">
       <configuration name="Runner" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Scenario_OutlineExample_feature - 2018.02.14 at 17h 06m 49s.xml">
@@ -1316,9 +1300,6 @@
     </history-entry>
     <history-entry file="Scenario_UiDataDriven_feature - 2018.02.14 at 17h 07m 01s.xml">
       <configuration name="Scenario:UiDataDriven.feature" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="TestRunner - 2018.02.14 at 16h 57m 47s.xml">
-      <configuration name="TestRunner" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestRunner - 2018.02.14 at 17h 07m 03s.xml">
       <configuration name="TestRunner" configurationId="JUnit" />
@@ -1392,7 +1373,8 @@
     <MESSAGE value="ssh client ready,&#10;debugging commands execution" />
     <MESSAGE value="ssh connection&#10;jdbc added" />
     <MESSAGE value="REST client added" />
-    <option name="LAST_COMMIT_MESSAGE" value="REST client added" />
+    <MESSAGE value="Junit runner finally added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Junit runner finally added" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>
@@ -1465,13 +1447,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/model/propertyexpansion/PropertyExpansionContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/smartbear/soapui/soapui/5.1.0/soapui-5.1.0.jar!/com/eviware/soapui/model/iface/SubmitContext.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1704,14 +1679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/cucumber-html-report/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/cucumber-html-report/report.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1795,18 +1762,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/cucumber-results/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/cucumber-html-report/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/TestRunner/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="187">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/RestClient.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -10,7 +10,6 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {
                 "pretty",
-                "html:target/cucumber-results/html",
                 "html:target/cucumber-html-report"
         },
         tags = {"~@wip", "~@ignored"},
