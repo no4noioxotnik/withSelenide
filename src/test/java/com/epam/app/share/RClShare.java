@@ -1,5 +1,6 @@
 package com.epam.app.share;
 
+import com.google.gson.JsonElement;
 import com.mashape.unirest.http.HttpMethod;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.request.HttpRequest;
@@ -31,6 +32,9 @@ public class RClShare {
     public String[] basic;
 
     public String md5HashSumFileOutgoing = null;
+    public String urlStr;
+    public HttpResponse<String> response;
+    public JsonElement jsonElement;
 
     public RClShare() {
         httpRequests = new HashMap<>();

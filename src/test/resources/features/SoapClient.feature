@@ -15,8 +15,8 @@ Feature:
 #    And I want to assert that the text contains "<string>" in response
 #    And I want to assert that response statusCode is "200"
 #    And I want to assert that response is "correct"
-#    And setup ftp mock server set port: "<number>" username: "<string>" password: "<string>" homeDir: "<string>"
-#    And Set timeout "<number>" milliseconds
+And setup ftp mock server set port: "2221" username: "user" password: "password" homeDir path: "src\test\resources\test_data"
+And Set timeout "10000" milliseconds
 #    And stop ftp mock server
 #    And get localhost IP address
 #    And i want to connect via ssh to host "<string>" port "<number>" with username "<string>" and password "<string>"

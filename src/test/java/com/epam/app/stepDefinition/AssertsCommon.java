@@ -16,11 +16,11 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class Asserts {
+public class AssertsCommon {
 
     private static SClShare b;
 
-    public Asserts(SClShare b) {
+    public AssertsCommon(SClShare b) {
         this.b = b;
     }
 

@@ -52,6 +52,12 @@ public class SoapClExp  {
         b.endpUri = endpUri;
     }
 
+    @And("^Set username: \"(.*)\" and password: \"(.*)\"$")
+    public void setUsernameAndPassword(String username, String password) {
+        b.username = username;
+        b.password = password;
+    }
+
         // import amazon wsdl
     @And("^Wsdl with url: (http|https)://(.*)$")
     public void wsdlUrl (String protocol, String url) throws SoapUIException {

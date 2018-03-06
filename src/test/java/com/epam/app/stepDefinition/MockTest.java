@@ -23,7 +23,7 @@ public class MockTest {
         this.b = b;
     }
 
-        @And("^setup ftp mock server set port: \"(\\d+)\" username: \"(.*)\" password: \"(.*)\" homeDir: \"(.*)\"$")
+        @And("^setup ftp mock server set port: \"(\\d+)\" username: \"(.*)\" password: \"(.*)\" homeDir path: \"(.*)\"$")
         public void mock(int port, String userName, String password, String homeDir) throws FtpException, IOException, InterruptedException {
             PropertiesUserManagerFactory userManagerFactory = new PropertiesUserManagerFactory();
             UserManager userManager = userManagerFactory.createUserManager();

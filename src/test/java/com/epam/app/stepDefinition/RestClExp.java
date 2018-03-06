@@ -2,6 +2,9 @@ package com.epam.app.stepDefinition;
 
 import com.epam.app.Helpers.MD5EncoderUtility;
 import com.epam.app.share.RClShare;
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Multimap;
+import com.google.gson.*;
 import com.mashape.unirest.http.HttpMethod;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
@@ -12,17 +15,20 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.impl.client.HttpClients;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.Charset;
-import java.util.HashMap;
+import java.util.*;
 
-import static com.epam.app.stepDefinition.Asserts.assertContainsOrEquals;
+import static com.epam.app.stepDefinition.AssertsCommon.assertContainsOrEquals;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.fail;
 
@@ -36,7 +42,6 @@ public class RestClExp {
         this.r = r;
     }
 
-
     @Given("^REST client with url: (http|https)://(.+):(\\d+)/?(.*)$")
     public void restClientWithUrl(String protocol, String host, int port, String endpoint)
             throws MalformedURLException {
@@ -47,6 +52,71 @@ public class RestClExp {
         r.host = host;
         r.port = port;
         this.setUrlPath(r.endpoint, "");
+    }
+
+    @And("^Set url as string: \"(.*)\" and endpoint: \"(.*)\" and request: \"(.*)\"$")
+    public void setUrl(String url, String endpoint, String request) {
+     r.urlStr = url + endpoint + request;
+    }
+
+    @And("^Send rest (GET|HEAD|POST|PUT|DELETE|PATCH|OPTIONS) request with body$")
+    public HttpRequest sendRest(HttpMethod method) throws UnirestException {
+        r.method = method;
+        HttpRequest request = null;
+        Unirest.setHttpClient(HttpClients
+                .custom()
+                .build()
+        );
+
+        switch (r.method) {
+            case GET:
+                request = Unirest.get(r.urlStr);
+                break;
+            case HEAD:
+                request = Unirest.head(r.urlStr);
+                break;
+            case POST:
+                request = Unirest.post(r.urlStr).body(r.body).getHttpRequest();
+                break;
+            case PUT:
+                request = Unirest.put(r.urlStr).body(r.body).getHttpRequest();
+                break;
+            case DELETE:
+                request = Unirest.delete(r.urlStr).body(r.body).getHttpRequest();
+                break;
+            case PATCH:
+                request = Unirest.patch(r.urlStr).body(r.body).getHttpRequest();
+                break;
+            case OPTIONS:
+                request = Unirest.options(r.urlStr).body(r.body).getHttpRequest();
+                break;
+        }
+
+        request.headers(r.headers);
+        if (r.basic != null)
+            request.basicAuth(r.basic[0], r.basic[1]);
+
+        if (request instanceof HttpRequestWithBody) {
+            if (r.method == HttpMethod.GET || r.method == HttpMethod.HEAD)
+                fail("You shouldn't set body for the GET or HEAD http methods");
+        }
+
+        r.httpRequest = request;
+        request.getHttpRequest().asString();
+        HttpResponse<String> response = request.asString();
+        r.httpResponse = response;
+        System.out.println(response.getBody());//for my needs
+        return request;
+    }
+
+    @And("^Assert that JSON response contains key: \"(.*)\" and int value: \"(\\d+)\"$")
+    public String assertResponce(String key, String value) {
+        String object = r.jsonElement.getAsJsonObject().get(key).getAsString();
+        if (!object.equals(value)) {
+            throw new AssertionError();
+        } else  {
+            return "SUCCESSFUL";
+        }
     }
 
     @Given("^REST client with method: (.*) and url: (http|https)://(.+):(\\d+)/?(.*)$")
@@ -171,5 +241,15 @@ public class RestClExp {
     public void assertThatResponseHeaderIs(String k, String matchType, String v) {
         String key = r.httpResponse.getHeaders().getFirst(k);
         assertContainsOrEquals(matchType, v, key);
+    }
+
+    @And("^Parse JSON response$")
+    public void parseJsonResponse() throws JSONException, IOException {
+        FileUtils.touch(new File("src/test/resources/test_data/myJson.json"));
+        try (PrintStream out = new PrintStream(new FileOutputStream("src/test/resources/test_data/myJson.json"))) {
+            out.print(r.httpResponse.getBody());
+        }
+        JsonElement root = new JsonParser().parse(new FileReader("src/test/resources/test_data/myJson.json"));
+        r.jsonElement = root;
     }
 }
