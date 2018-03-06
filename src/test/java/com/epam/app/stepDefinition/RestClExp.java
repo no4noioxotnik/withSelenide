@@ -251,5 +251,7 @@ public class RestClExp {
         }
         JsonElement root = new JsonParser().parse(new FileReader("src/test/resources/test_data/myJson.json"));
         r.jsonElement = root;
+        JsonObject jsonObject = (JsonObject) root;
+        r.jsonObject = jsonObject;
     }
 }

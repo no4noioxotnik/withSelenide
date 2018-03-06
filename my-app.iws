@@ -23,19 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d6b4635-5e93-43a9-8295-38a5395c04df" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/AssertsRest.java" />
-      <change beforePath="$PROJECT_DIR$/my-app.iml" afterPath="$PROJECT_DIR$/my-app.iml" />
-      <change beforePath="$PROJECT_DIR$/my-app.ipr" afterPath="$PROJECT_DIR$/my-app.ipr" />
       <change beforePath="$PROJECT_DIR$/my-app.iws" afterPath="$PROJECT_DIR$/my-app.iws" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/share/RClShare.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/share/RClShare.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/share/SClShare.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/share/SClShare.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/Asserts.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/AssertsCommon.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/MockTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/MockTest.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/RestClExp.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/RestClExp.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/SoapClExp.java" afterPath="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/SoapClExp.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/RestClient.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/RestClient.feature" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SoapClient.feature" afterPath="$PROJECT_DIR$/src/test/resources/features/SoapClient.feature" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -218,10 +208,10 @@
       <file leaf-file-name="RestClient.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/RestClient.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="81">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
-                <marker date="1520339206350" expanded="true" signature="880:1127" ph="..." />
+                <marker date="1520340796525" expanded="true" signature="880:1127" ph="..." />
               </folding>
             </state>
           </provider>
@@ -231,7 +221,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/RestClExp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
-              <caret line="117" column="32" lean-forward="true" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
+              <caret line="254" column="31" lean-forward="true" selection-start-line="254" selection-start-column="31" selection-end-line="254" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1344#1345#0" expanded="true" />
@@ -249,6 +239,16 @@
                 <element signature="e#8669#8670#0" expanded="true" />
                 <element signature="e#8739#8740#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RClShare.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/share/RClShare.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -336,8 +336,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/AssertsCommon.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/filename.txt" />
-        <option value="$PROJECT_DIR$/src/test/java/com/epam/app/share/RClShare.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/RestClExp.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/app/share/RClShare.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/RestClient.feature" />
       </list>
     </option>
@@ -1301,25 +1301,17 @@
       <option name="project" value="LOCAL" />
       <updated>1518622795027</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Bug fixes">
+      <created>1520339352350</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1520339352350</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__I_want_to_test_Rest-Tests_Scenario - 2018.03.06 at 15h 18m 18s.xml">
-      <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__I_want_to_test_Rest-Tests_Scenario - 2018.03.06 at 15h 18m 34s.xml">
-      <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__I_want_to_test_Rest-Tests_Scenario - 2018.03.06 at 15h 18m 52s.xml">
-      <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__I_want_to_test_Rest-Tests_Scenario - 2018.03.06 at 15h 19m 39s.xml">
-      <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__I_want_to_test_Rest-Tests_Scenario - 2018.03.06 at 15h 21m 26s.xml">
-      <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Scenario__I_want_to_test_Rest-Tests_Scenario - 2018.03.06 at 15h 21m 44s.xml">
       <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
@@ -1333,6 +1325,21 @@
       <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="Scenario__I_want_to_test_Rest-Tests_Scenario - 2018.03.06 at 15h 26m 50s.xml">
+      <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__I_want_to_test_Rest-Tests_Scenario - 2018.03.06 at 15h 48m 53s.xml">
+      <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__I_want_to_test_Rest-Tests_Scenario - 2018.03.06 at 15h 52m 53s.xml">
+      <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__I_want_to_test_Rest-Tests_Scenario - 2018.03.06 at 15h 53m 10s.xml">
+      <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__I_want_to_test_Rest-Tests_Scenario - 2018.03.06 at 15h 53m 27s.xml">
+      <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__I_want_to_test_Rest-Tests_Scenario - 2018.03.06 at 15h 53m 45s.xml">
       <configuration name="Scenario: I want to test Rest-Tests Scenario" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
@@ -1891,8 +1898,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/share/RClShare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        <state relative-caret-position="164">
+          <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -1900,7 +1907,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/app/stepDefinition/RestClExp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
-          <caret line="117" column="32" lean-forward="true" selection-start-line="117" selection-start-column="32" selection-end-line="117" selection-end-column="32" />
+          <caret line="254" column="31" lean-forward="true" selection-start-line="254" selection-start-column="31" selection-end-line="254" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1344#1345#0" expanded="true" />
@@ -1923,10 +1930,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/RestClient.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="81">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <marker date="1520339206350" expanded="true" signature="880:1127" ph="..." />
+            <marker date="1520340796525" expanded="true" signature="880:1127" ph="..." />
           </folding>
         </state>
       </provider>
