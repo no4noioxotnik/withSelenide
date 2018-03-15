@@ -18,18 +18,17 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.impl.client.HttpClients;
 import org.json.JSONException;
 import org.junit.Assert;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -118,7 +117,7 @@ public class RestClExp {
     @And("^Assert that JSON response contains key: \"(.*)\" and int value: \"(\\d+)\"$")
     public String assertResponce(String key, String value) {
         String object = r.jsonElement.getAsJsonObject().get(key).getAsString();
-        Assert.assertEquals(object,value);
+        Assert.assertEquals(value,object);
         return object;
     }
 
@@ -249,16 +248,18 @@ public class RestClExp {
     @And("^Parse JSON response$")
     public void parseJsonResponse() throws JSONException, IOException {
 
-        FileUtils.touch(new File("src/test/resources/test_data/myJson.json"));
-        try (PrintStream out = new PrintStream(new FileOutputStream("src/test/resources/test_data/myJson.json"))) {
-            out.print(r.httpResponse.getBody());
-        }
-        JsonElement root = new JsonParser().parse(new FileReader("src/test/resources/test_data/myJson.json"));
+//        FileUtils.touch(new File("src/test/resources/test_data/myJson.json"));
+//        try (PrintStream out = new PrintStream(new FileOutputStream("src/test/resources/test_data/myJson.json"))) {
+//            out.print(r.httpResponse.getBody());
+//        }
+        JsonElement root = new JsonParser().parse(String.valueOf(r.httpResponse.getBody()));
         r.jsonElement = root;
         JsonObject jsonObject = (JsonObject) root;
         r.jsonObject = jsonObject;
+
 //TODO: manage json
-        byte[] mapData = Files.readAllBytes(Paths.get("src/test/resources/test_data/myJson.json"));
+
+        byte[] mapData = r.httpResponse.getBody().toString().getBytes();
         Map<String,String> myMap = new HashMap<String, String>();
         ObjectMapper objectMapper = new ObjectMapper();
         myMap = objectMapper.readValue(mapData, HashMap.class);
@@ -273,7 +274,7 @@ public class RestClExp {
             System.out.println("Collection id = " + id);
         }
 
-        ((ObjectNode) rootNode).put("resultCount", 500);
+        ((ObjectNode) rootNode).put("resultCount", 700);
         ((ObjectNode) rootNode).put("test", "test value");
 //        ((ObjectNode) rootNode).remove("role");
         objectMapper.writeValue(new File("updated_emp.txt"), rootNode);
