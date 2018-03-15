@@ -2,9 +2,9 @@ package com.epam.app.stepDefinition;
 
 import com.epam.app.Helpers.MD5EncoderUtility;
 import com.epam.app.share.RClShare;
-import com.google.common.collect.ArrayListMultimap;
-import com.google.common.collect.Multimap;
-import com.google.gson.*;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.mashape.unirest.http.HttpMethod;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
@@ -18,15 +18,14 @@ import cucumber.api.java.en.When;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.impl.client.HttpClients;
-import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
+import org.junit.Assert;
 
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.Charset;
-import java.util.*;
+import java.util.HashMap;
 
 import static com.epam.app.stepDefinition.AssertsCommon.assertContainsOrEquals;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -112,11 +111,13 @@ public class RestClExp {
     @And("^Assert that JSON response contains key: \"(.*)\" and int value: \"(\\d+)\"$")
     public String assertResponce(String key, String value) {
         String object = r.jsonElement.getAsJsonObject().get(key).getAsString();
-        if (!object.equals(value)) {
-            throw new AssertionError();
-        } else  {
-            return "SUCCESSFUL";
-        }
+        Assert.assertEquals(object,value);
+//        if (object.equals(value)) {
+//            return "SUCCESSFUL";
+//        } else  {
+//            throw new AssertionError();
+//        }
+        return object;
     }
 
     @Given("^REST client with method: (.*) and url: (http|https)://(.+):(\\d+)/?(.*)$")
@@ -245,6 +246,7 @@ public class RestClExp {
 
     @And("^Parse JSON response$")
     public void parseJsonResponse() throws JSONException, IOException {
+
         FileUtils.touch(new File("src/test/resources/test_data/myJson.json"));
         try (PrintStream out = new PrintStream(new FileOutputStream("src/test/resources/test_data/myJson.json"))) {
             out.print(r.httpResponse.getBody());
