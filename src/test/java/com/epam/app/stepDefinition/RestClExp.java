@@ -2,6 +2,9 @@ package com.epam.app.stepDefinition;
 
 import com.epam.app.Helpers.MD5EncoderUtility;
 import com.epam.app.share.RClShare;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -25,7 +28,11 @@ import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 import static com.epam.app.stepDefinition.AssertsCommon.assertContainsOrEquals;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -112,11 +119,6 @@ public class RestClExp {
     public String assertResponce(String key, String value) {
         String object = r.jsonElement.getAsJsonObject().get(key).getAsString();
         Assert.assertEquals(object,value);
-//        if (object.equals(value)) {
-//            return "SUCCESSFUL";
-//        } else  {
-//            throw new AssertionError();
-//        }
         return object;
     }
 
@@ -255,5 +257,26 @@ public class RestClExp {
         r.jsonElement = root;
         JsonObject jsonObject = (JsonObject) root;
         r.jsonObject = jsonObject;
+//TODO: manage json
+        byte[] mapData = Files.readAllBytes(Paths.get("src/test/resources/test_data/myJson.json"));
+        Map<String,String> myMap = new HashMap<String, String>();
+        ObjectMapper objectMapper = new ObjectMapper();
+        myMap = objectMapper.readValue(mapData, HashMap.class);
+        System.out.println("Map is: "+myMap);
+        JsonNode rootNode = objectMapper.readTree(mapData);
+        JsonNode idNode = rootNode.path("artistId");
+        System.out.println("id = "+idNode.asInt());
+        JsonNode collectionIdsNode = rootNode.path("collectionId");
+        Iterator<JsonNode> elements = collectionIdsNode.elements();
+        while(elements.hasNext()){
+            JsonNode id = elements.next();
+            System.out.println("Collection id = " + id);
+        }
+
+        ((ObjectNode) rootNode).put("resultCount", 500);
+        ((ObjectNode) rootNode).put("test", "test value");
+//        ((ObjectNode) rootNode).remove("role");
+        objectMapper.writeValue(new File("updated_emp.txt"), rootNode);
+
     }
 }
