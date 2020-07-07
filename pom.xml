@@ -174,10 +174,11 @@
       <version>1.6.4</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/com.fifesoft/rsyntaxtextarea -->
     <dependency>
-      <groupId>fife</groupId>
+      <groupId>com.fifesoft</groupId>
       <artifactId>rsyntaxtextarea</artifactId>
-      <version>2.0.1</version>
+      <version>2.5.0</version>
     </dependency>
 
     <dependency>
@@ -246,19 +247,19 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/com.smartbear.soapui/soapui-maven-plugin -->
     <dependency>
-      <groupId>com.github.redfish4ktc.soapui</groupId>
-      <artifactId>soapui</artifactId>
-      <version>4.6.1</version>
-      <scope>test</scope>
+      <groupId>com.smartbear.soapui</groupId>
+      <artifactId>soapui-maven-plugin</artifactId>
+      <version>5.1.0</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
     <dependency>
       <groupId>org.apache.commons</groupId>
-      <artifactId>commons-lang</artifactId>
-      <version>3.3.2</version>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.4</version>
     </dependency>
 
     <!-- mina.apache.org/ftpserver-project/ -->
@@ -301,6 +302,14 @@
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
       <version>2.2.3</version>
+    </dependency>
+
+    <!-- evaluate new libraries-->
+
+    <dependency>
+      <groupId>us.vchain</groupId>
+      <artifactId>jvcn</artifactId>
+      <version>0.0.1</version>
     </dependency>
 
   </dependencies>

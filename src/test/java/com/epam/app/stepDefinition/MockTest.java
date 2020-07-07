@@ -23,7 +23,7 @@ public class MockTest {
         this.b = b;
     }
 
-        @And("^setup ftp mock server set port: \"(\\d+)\" username: \"(.*)\" password: \"(.*)\" homeDir path: \"(.*)\"$")
+        @And("^setup ftp server set port: \"(\\d+)\" username: \"(.*)\" password: \"(.*)\" homeDir path: \"(.*)\"$")
         public void mock(int port, String userName, String password, String homeDir) throws FtpException, IOException, InterruptedException {
             PropertiesUserManagerFactory userManagerFactory = new PropertiesUserManagerFactory();
             UserManager userManager = userManagerFactory.createUserManager();
@@ -42,23 +42,24 @@ public class MockTest {
 
             FtpServer server = factory.createServer();
             server.start();
-            Thread.sleep(50000);
+            System.out.println("\nFtp server started");
             b.server = server;
         }
 
-        private ServerSocket serverSocket;
-        private Thread thread = null;
+//        private ServerSocket serverSocket;
+//        private Thread thread = null;
+//
+//        public void runThread() throws IOException {
+//            serverSocket = new ServerSocket(21);
+//            System.out.println("server started");
+//            thread.start();
+//            //serverSocket.setSoTimeout(10000);
+//        }
 
-        public void runThread() throws IOException {
-            serverSocket = new ServerSocket(21);
-            System.out.println("server started");
-            thread.start();
-            //serverSocket.setSoTimeout(10000);
-        }
-
-       @And("stop ftp mock server")
+       @And("stop ftp server")
         public void stopFtpMock() {
             b.server.stop();
+           System.out.println("\nFtp server stopped");
        }
 }
 

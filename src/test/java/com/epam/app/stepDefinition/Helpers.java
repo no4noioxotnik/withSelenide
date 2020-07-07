@@ -47,13 +47,14 @@ public class Helpers {
             Enumeration ee = n.getInetAddresses();
             while (ee.hasMoreElements()) {
                 InetAddress i = (InetAddress) ee.nextElement();
-                if (i.getHostAddress().matches("((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)")) {
+                if (i.getHostAddress()
+                        .matches("((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)")) {
                     //System.out.println(i.getHostAddress());
                     ipAdr.add(i.getHostAddress());
                 }
             }
         }
-        System.out.println(ipAdr.get(2));
+        System.out.println("\n" + ipAdr.get(2));
     }
 
     @And("^Set timeout \"?(\\d+)\" milliseconds$")
